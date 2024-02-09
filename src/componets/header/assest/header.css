@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --h_primary_blue_color: #000000;
+    --h_secondary_orange_color: #ffffff;
+
+}
+
+body {
+    font-family: 'Integral CF';
+    font-family: 'Satoshi';
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+
+}
+
+.section {
+    max-width: 1720px;
+    width: 100%;
+    padding: 0 100;
+    margin: 0 auto
+}
+
+/*common classes */
+
+
+.h_primary {
+    font-family: Integral CF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.h_secondary{
+    font-family: Satoshi;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.h_heading{
+    font-family: Integral CF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.h_sm_heading {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.h_sm_prime{
+    font-family: Satoshi;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.h_mm_heading {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.h_ss_heading {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* header section start */
+
+.header_top_section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--h_primary_blue_color);
+    color: var(--h_secondary_orange_color);
+    padding: 9px;
+}
+
+   /* header menu section */
+
+   .header_menu_section{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+   }
+
+   .header_menu_item{
+    display: flex;
+    gap: 24px;
+   }
+
+.header_input_section {
+    display: flex;
+    align-items: center;
+    background: #F0F0F0;
+    padding: 12px 16px;
+    border-radius: 62px;
+    max-width: 577px;
+    width: 100%;
+    gap: 12px;
+}
+.header_input_section input{
+    border: none; 
+    outline: none;
+    background-color:#F0F0F0;
+}
+.header_icon{
+    display: flex;
+    gap: 14px;
+}
+
+/* hero section */
+
+.hero_back_section{
+    background-color: #F0F0F0;
+}
+.hero_section{
+    padding: 151px 0;
+}
+.hero_text_section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero_button{
+    max-width: 210px;
+    width: 100%;
+    padding: 16px 54px;
+    border-radius: 62px;
+    text-align: center;
+    color: var(--h_secondary_orange_color);
+    background-color: var(--h_primary_blue_color);
+}
+
+
+.vl{
+    border: 1px solid #0000001A;
+    width: 1px;
+}
+.hero_sub_section{
+    display: flex;
+    gap: 32px;
+
+}
