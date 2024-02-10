@@ -25,6 +25,7 @@ li {
 :root {
     --h_primary_blue_color: #000000;
     --h_secondary_orange_color: #ffffff;
+    --white_dark_color: #c6c2c2;
 
 }
 
@@ -44,7 +45,7 @@ body {
 .section {
     max-width: 1720px;
     width: 100%;
-    padding: 0 100;
+    padding: 0 100px;
     margin: 0 auto
 }
 
@@ -52,7 +53,6 @@ body {
 
 
 .h_primary {
-    font-family: Integral CF;
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
@@ -62,8 +62,7 @@ body {
 }
 
 
-.h_secondary{
-    font-family: Satoshi;
+.h_secondary {
     font-size: 40px;
     font-weight: 700;
     line-height: 54px;
@@ -72,8 +71,7 @@ body {
 
 }
 
-.h_heading{
-    font-family: Integral CF;
+.h_heading {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
@@ -83,7 +81,6 @@ body {
 }
 
 .h_sm_heading {
-    font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -91,18 +88,17 @@ body {
     text-align: left;
 
 }
-.h_sm_prime{
-    font-family: Satoshi;
-font-size: 16px;
-font-weight: 500;
-line-height: 22px;
-letter-spacing: 0em;
-text-align: left;
+
+.h_sm_prime {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 
 .h_mm_heading {
-    font-family: Satoshi;
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
@@ -111,7 +107,6 @@ text-align: left;
 }
 
 .h_ss_heading {
-    font-family: Satoshi;
     font-size: 14px;
     font-weight: 500;
     line-height: 19px;
@@ -120,6 +115,9 @@ text-align: left;
 }
 
 /* header section start */
+.sign_up {
+    color: var(--h_secondary_orange_color);
+}
 
 .header_top_section {
     display: flex;
@@ -127,22 +125,29 @@ text-align: left;
     background-color: var(--h_primary_blue_color);
     color: var(--h_secondary_orange_color);
     padding: 9px;
+    color: var(--white_dark_color);
 }
 
-   /* header menu section */
+/* header menu section */
+.toggle_button {
+    display: none;
+}
 
-   .header_menu_section{
+.menu_search_icon {
+    display: none;
+}
+
+.header_menu_section {
     display: flex;
-    gap: 40px;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     padding: 24px 0;
-   }
+}
 
-   .header_menu_item{
+.header_menu_item {
     display: flex;
     gap: 24px;
-   }
+}
 
 .header_input_section {
     display: flex;
@@ -154,30 +159,39 @@ text-align: left;
     width: 100%;
     gap: 12px;
 }
-.header_input_section input{
-    border: none; 
+
+.header_input_section input {
+    border: none;
     outline: none;
-    background-color:#F0F0F0;
+    background-color: #F0F0F0;
 }
-.header_icon{
+
+.header_icon {
     display: flex;
     gap: 14px;
 }
 
 /* hero section */
 
-.hero_back_section{
+.hero_back_section {
     background-color: #F0F0F0;
 }
-.hero_section{
+
+.hero_section {
+    display: flex;
     padding: 151px 0;
+    justify-content: space-between;
 }
-.hero_text_section{
+
+.hero_text_section {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    max-width: 577px;
+    width: 100%;
 }
-.hero_button{
+
+.hero_button {
     max-width: 210px;
     width: 100%;
     padding: 16px 54px;
@@ -188,12 +202,188 @@ text-align: left;
 }
 
 
-.vl{
+.vl {
     border: 1px solid #0000001A;
     width: 1px;
 }
-.hero_sub_section{
+
+.hero_sub_section {
     display: flex;
     gap: 32px;
+    padding: 32px 0 0 0;
+}
+
+/* company back section */
+.company_back_section {
+    background-color: #000000;
+    display: flex;
+}
+
+.company_name_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+
+@media(max-width:567px) {
+    .section {
+        padding: 0 20px;
+        margin: 0 auto
+    }
+
+    .h_primary {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .h_secondary {
+        font-family: Satoshi;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .h_heading {
+        font-family: Integral CF;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .h_sm_heading {
+        font-family: Satoshi;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+    }
+
+    .h_sm_prime {
+        font-family: Satoshi;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+    }
+
+    .h_mm_heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .h_ss_heading {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+    /* header section start */
+    .toggle_button {
+        display: block;
+    }
+
+    .menu_search_icon {
+        display: block;
+    }
+
+    .header_menu_item {
+        display: none;
+    }
+
+    .header_input_section {
+        display: none;
+    }
+
+
+
+    /* hero section and menu section*/
+    .toggle_bar {
+        display: flex;
+        gap: 10px;
+    }
+
+    .header_menu_section {
+        display: flex;
+    }
+
+    .hero_img {
+        max-width: 390px;
+        width: 100%;
+    }
+
+    .hero_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 50px 0;
+    }
+
+    .hero_button {
+        text-align: center;
+        max-width: 358px;
+        width: 100%;
+    }
+
+    .hero_main_heading {
+        max-width: 315px;
+        width: 100%;
+    }
+
+    .hero_main_text {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    .hero_sub_section {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .price_text {
+        display: grid;
+        grid-column: 1/4;
+        justify-content: center;
+    }
+
+
+    /* company section */
+
+    .company_name_section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        row-gap: 15px;
+    }
+
+    .company_name_section img {
+        max-width: 116px;
+        width: 100%;
+        height: 26px;
+    }
+
 
 }
