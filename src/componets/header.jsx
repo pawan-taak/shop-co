@@ -18,6 +18,7 @@ function Header() {
                 <div className="header_menu_section">
                     <div className="toggle_bar">
                         <img src={require('./header/assest/icon/toggle.png')} className="toggle_button" />
+    
                         <h3 className="h_heading">SHOP.CO</h3>
                     </div>
 
