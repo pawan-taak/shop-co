@@ -18,7 +18,7 @@ function Header() {
                 <div className="header_menu_section">
                     <div className="toggle_bar">
                         <img src={require('./header/assest/icon/toggle.png')} className="toggle_button" />
-    
+
                         <h3 className="h_heading">SHOP.CO</h3>
                     </div>
 
@@ -93,6 +93,23 @@ function Header() {
                 </div>
             </div>
 
+
+            {/* browse section */}
+
+            <div className="container">
+                <div className="section">
+                    <div className="browse_section">
+                        <h2 className="m_primary_heading">BROWSE BY DRESS STYLE</h2>
+
+                        <div className="browser_card_section">
+                            <img src={require('./header/assest/img/casual.png')} className="browse_img casual_img" />
+                            <img src={require('./header/assest/img/formale.png')} className="browse_img formal_img" />
+                            <img src={require('./header/assest/img/party.png')} className="browse_img party_img" />
+                            <img src={require('./header/assest/img/gym.png')} className="browse_img gym_img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

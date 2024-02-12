@@ -114,6 +114,39 @@ body {
     text-align: left;
 }
 
+
+  /* hero main section common css */
+
+.m_primary_heading{
+    font-family: Integral CF;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.m_secondary_heading{
+    font-family: Satoshi;
+font-size: 36px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* header section start */
 .sign_up {
     color: var(--h_secondary_orange_color);
@@ -226,8 +259,52 @@ body {
 }
 
 
+/* browse section start */
+
+.browse_section{       
+    border-radius: 40px;
+    margin: 0 0 100px 0;
+    background: #F0F0F0;
+    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 35px;
+}
+ 
+
+.browse_img{
+    position: relative;
+    border-radius: 20px;
+}
+
+.browse_heading{
+    position: absolute;
+    z-index: 1;
+    padding: 36px 25px;
+}
+
+.formal_heading{
+    position: absolute;
+}
+ .browser_card_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+ }
+ 
+ 
+
+ 
+
+
+
+
+
+
 @media(max-width:567px) {
-    .section {
+    .section{         
         padding: 0 20px;
         margin: 0 auto
     }
@@ -299,6 +376,18 @@ body {
         text-align: left;
     }
 
+    
+  /* hero main section common css */
+
+.m_primary_heading{    
+font-size: 32px;
+
+}
+
+.m_secondary_heading{     
+font-size: 24px;
+
+}
 
     /* header section start */
     .toggle_button {
@@ -384,6 +473,22 @@ body {
         width: 100%;
         height: 26px;
     }
+
+    .browse_img{
+        max-width: 310px;
+        width: 100%;
+        height: 190px;
+    }
+
+.browse_section{
+    padding: 50px 0 50px;
+}
+
+ 
+
+ 
+
+
 
 
 }
