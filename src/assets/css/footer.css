@@ -20,7 +20,7 @@ a {
 .section{
     max-width: 1720px;
     width: 100%;
-    padding: 100px 100px;
+    padding: 0 100px;
   }
 
 .footer_section{
