@@ -1,4 +1,5 @@
 import "./header/assest/header.css"
+import "../App.css"
 
 function Header() {
     return (
@@ -46,6 +47,8 @@ function Header() {
             </div>
 
             {/* hero section */}
+
+ 
 
             <div className="hero_back_section">
                 <div className="container">
