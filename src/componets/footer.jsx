@@ -1,72 +1,82 @@
 import { Fragment } from "react";
-import '../assets/css/footer.css'
+import '../assets/css/footer.css';
 
+function Footer() {
+  const footerSections = [
+    {
+      title: 'COMPANY',
+      links: [
+        { text: 'About', href: '#about' },
+        { text: 'Features', href: '#features' },
+        { text: 'Works', href: '#works' },
+        { text: 'Career', href: '#career' },
+      ],
+    },
+    {
+      title: 'HELP',
+      links: [
+        { text: 'Customer Support', href: '#customer-support' },
+        { text: 'Delivery Details', href: '#delivery-details' },
+        { text: 'Terms & Conditions', href: '#terms-conditions' },
+        { text: 'Privacy Policy', href: '#privacy-policy' },
+      ],
+    },
+    {
+      title: 'FAQ',
+      links: [
+        { text: 'ACCOUNT', href: '#account' },
+        { text: 'Manage Deliveries', href: '#manage-deliveries' },
+        { text: 'Orders', href: '#orders' },
+        { text: 'Payments', href: '#payments' },
+      ],
+    },
+    {
+      title: 'RESOURCES',
+      links: [
+        { text: 'Free eBooks', href: '#free-ebooks' },
+        { text: 'Development Tutorial', href: '#development-tutorial' },
+        { text: 'How to - Blog', href: '#how-to-blog' },
+        { text: 'Youtube Playlist', href: '#youtube-playlist' },
+      ],
+    },
+  ];
 
-function Footer(){
-        return(
-            <Fragment>
-            <div className="footer_section section">
-            <div>
-              <h2>
-                SHOP.CO
-              </h2>
-              <div><p>
-              We have clothes that suits your style and which you’re proud to wear.
-               From women to men.
-              </p></div>
-              <img src={require('./footerimg/footer_git.png')} alt="footer git"/>
-              
-          
-            </div>
-               <nav>
-            <div className="footer_nav_bar">
-            <div className="footer_support">
-            <h2>COMPANY</h2>
-              
-              <div className="footer_nav_list">
-              <a className="footer_effect" href="#about">About</a>
-              <a className="footer_effect" href="#features">Features</a>
-              <a className="footer_effect" href="#works">Works</a>
-              <a className="footer_effect" href="#career">Career</a>
+  return (
+    <Fragment>
+      <div className="footer_section section">
+        <div>
+          <h2>SHOP.CO</h2>
+          <div>
+            <p>
+              We have clothes that suit your style and which you’re proud to wear. From women to men.
+            </p>
+          </div>
+          <img src={require('./footerimg/twitter.png')} alt="footer git" />
+          <img src={require('./footerimg/footer_fb.png')} alt="footer git" />
+          <img src={require('./footerimg/footer_insta.png')} alt="footer git" />
+          <img src={require('./footerimg/git.png')} alt="footer git" />
+        </div>
+
+        <nav>
+          <div className="footer_nav_bar">
+            {footerSections.map((section, index) => (
+              <div key={index} className="footer_support">
+                <h2>{section.title}</h2>
+                <div className="footer_nav_list">
+                  {section.links.map((link, linkIndex) => (
+                    <a key={linkIndex} className="footer_effect" href={link.href}>
+                      {link.text}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          
-            <div className="footer_support">
-            <h2>HELP</h2>
-              <div className="footer_nav_list">
-              <a className="footer_effect" href="#customer-support">Customer Support</a>
-              <a className="footer_effect" href="#delivery-details">Delivery Details</a>
-              <a className="footer_effect" href="#terms-conditions">Terms & Conditions</a>
-              <a className="footer_effect" href="#privacy-policy">Privacy Policy</a>
-              </div>
-            </div>
-            
-             <div className="footer_support">
-             <h2>FAQ</h2>
-              <div className="footer_nav_list">
-              <a className="footer_effect" href="#account">ACCOUNT</a>
-              <a className="footer_effect" href="#manage-deliveries">Manage Deliveries</a>
-              <a className="footer_effect" href="#orders">Orders</a>
-              <a className="footer_effect" href="#payments">Payments</a>
-              </div>
-             </div>
-            
-             <div className="footer_support">
-             <h2>RESOURCES</h2>
-              <div className="footer_nav_list">
-              <a className="footer_effect" href="#free-ebooks">Free eBooks</a>
-              <a className="footer_effect" href="#development-tutorial">Development Tutorial</a>
-              <a className="footer_effect" href="#how-to-blog">How to - Blog</a>
-              <a className="footer_effect" href="#youtube-playlist">Youtube Playlist</a>
-              </div>
-             </div>
-            
-            </div>
-          </nav>
-          <hr/>
-            </div>     
-            </Fragment>
-        
-        )
-};
-export default Footer; 
+            ))}
+          </div>
+        </nav>
+        <hr />
+      </div>
+    </Fragment>
+  );
+}
+
+export default Footer;
