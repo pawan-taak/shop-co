@@ -16,9 +16,14 @@ function Header() {
 
             <div className="section">
                 <div className="header_menu_section">
-                    <div className="toggle_bar">
-                        <img src={require('./header/assest/icon/toggle.png')} className="toggle_button" />
-
+                    <div className="toggle_bar">                         
+                        <button id="toggleButton" onclick="toggleSidebar()" class="toggle_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
                         <h3 className="h_heading">SHOP.CO</h3>
                     </div>
 
@@ -101,11 +106,26 @@ function Header() {
                     <div className="browse_section">
                         <h2 className="m_primary_heading">BROWSE BY DRESS STYLE</h2>
 
-                        <div className="browser_card_section">
-                            <img src={require('./header/assest/img/casual.png')} className="browse_img casual_img" />
-                            <img src={require('./header/assest/img/formale.png')} className="browse_img formal_img" />
-                            <img src={require('./header/assest/img/party.png')} className="browse_img party_img" />
-                            <img src={require('./header/assest/img/gym.png')} className="browse_img gym_img" />
+                        <div className="browse_card_section">
+                            <span>
+                                <p class="browse_heading m_secondary_heading">Casual</p>
+                                <img src={require('./header/assest/img/casual_img.png')} className="browse_img" />
+                            </span>
+
+                            <span>
+                                <p class="browse_heading m_secondary_heading">Formal</p>
+                                <img src={require('./header/assest/img/formal_img.png')} className="browse_img" />
+                            </span>
+
+                            <span>
+                                <p class="browse_heading m_secondary_heading">Party</p>
+                                <img src={require('./header/assest/img/party_img.png')} className="browse_img party_img" />
+                            </span>
+
+                            <span>
+                                <p class="browse_heading m_secondary_heading">Gym</p>
+                                <img src={require('./header/assest/img/gym_img.png')} className="browse_img gym_img" />
+                            </span>
                         </div>
                     </div>
                 </div>
