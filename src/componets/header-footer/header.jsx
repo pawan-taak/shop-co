@@ -1,8 +1,11 @@
 import "../../assets/css/header.css"
 import '../../App.css'
 import "../../main/arrivals"
+import Demo from "./toggle_btn"
+ 
 
 function Header() {
+    
     return (
         <>
 
@@ -19,17 +22,13 @@ function Header() {
             <div className="section">
                 <div className="header_menu_section">
                     <div className="toggle_bar">                         
-                        <button id="toggleButton" onclick="toggleSidebar()" class="toggle_button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
+                       <Demo></Demo>
                         <h3 className="h_heading">SHOP.CO</h3>
                     </div>
 
-                    <ul className="header_menu_item  h_sm_heading">
+                   
+                   
+                   <ul className="header_menu_item  h_sm_heading">
                         <li>Shop</li>
                         <li>On Sale</li>
                         <li>New Arrivals</li>
