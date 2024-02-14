@@ -1,150 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-ul li {
-    list-style: none;
-}
-
-li {
-    list-style: none;
-}
-
-li {
-    list-style: none;
-}
-
-:root {
-    --h_primary_blue_color: #000000;
-    --h_secondary_orange_color: #ffffff;
-    --white_dark_color: #c6c2c2;
-
-}
-
-body {
-    font-family: 'Integral CF';
-    font-family: 'Satoshi';
-}
-
-.container {
-    max-width: 1920px;
-    width: 100%;
-    padding: 0 0;
-    margin: 0 auto;
-
-}
-
-.section {
-    max-width: 1720px;
-    width: 100%;
-    padding: 0 100px;
-    margin: 0 auto
-}
-
-/*common classes */
-
-
-.h_primary {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-
-.h_secondary {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-.h_heading {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-.h_sm_heading {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-.h_sm_prime {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-
-.h_mm_heading {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.h_ss_heading {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-
-  /* hero main section common css */
-
-.m_primary_heading{
-    font-family: Integral CF;
-font-size: 48px;
-font-weight: 700;
-line-height: 58px;
-letter-spacing: 0em;
-text-align: center;
-
-}
-
-.m_secondary_heading{
-    font-family: Satoshi;
-font-size: 36px;
-font-weight: 700;
-line-height: 49px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-
-
-
-
-
-
-
-
-
 
 
 /* header section start */
@@ -165,6 +18,7 @@ text-align: left;
 .toggle_button {
     display: none;
 }
+ 
 
 .menu_search_icon {
     display: none;
@@ -261,42 +115,49 @@ text-align: left;
 
 /* browse section start */
 
-.browse_section{       
+.browse_section {
     border-radius: 40px;
-    margin: 0 0 100px 0;
+    margin: 100px 0 100px 0;
     background: #F0F0F0;
     padding: 100px 0 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-   gap: 35px;
+    gap: 35px;
 }
- 
 
-.browse_img{
+
+.browse_img {
     position: relative;
     border-radius: 20px;
 }
 
-.browse_heading{
+.browse_heading {
     position: absolute;
     z-index: 1;
     padding: 36px 25px;
 }
 
-.formal_heading{
-    position: absolute;
+.party_img {
+    width: 684px;
+    height: 289px;
 }
- .browser_card_section{
+
+.gym_img {
+    width: 407px;
+    height: 289px;
+}
+
+.browse_card_section {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
- }
- 
- 
+}
 
- 
+
+
+
 
 
 
@@ -304,7 +165,7 @@ text-align: left;
 
 
 @media(max-width:567px) {
-    .section{         
+    .section {
         padding: 0 20px;
         margin: 0 auto
     }
@@ -376,18 +237,18 @@ text-align: left;
         text-align: left;
     }
 
-    
-  /* hero main section common css */
 
-.m_primary_heading{    
-font-size: 32px;
+    /* hero main section common css */
 
-}
+    .m_primary_heading {
+        font-size: 32px;
 
-.m_secondary_heading{     
-font-size: 24px;
+    }
 
-}
+    .m_secondary_heading {
+        font-size: 24px;
+
+    }
 
     /* header section start */
     .toggle_button {
@@ -405,6 +266,19 @@ font-size: 24px;
     .header_input_section {
         display: none;
     }
+       
+      /* toggle_button_start */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -474,19 +348,21 @@ font-size: 24px;
         height: 26px;
     }
 
-    .browse_img{
-        max-width: 310px;
-        width: 100%;
+    .browse_img {
+        width:310px;
         height: 190px;
     }
 
-.browse_section{
-    padding: 50px 0 50px;
-}
+    .browse_section {
+        padding: 50px 0 50px;
+    }
+    .browse_heading{
+        padding: 16px 24px;
+    }
 
- 
 
- 
+
+
 
 
 

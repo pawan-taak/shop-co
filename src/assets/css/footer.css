@@ -24,14 +24,26 @@ a {
   }
 
 .footer_section{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 26px;
+    border-bottom: 1px solid black
 }
 .footer_nav_bar{
     display: flex;
     white-space: nowrap;
     gap: 30px;
+}
+.footer_logo_section{
+    display: flex;
+    gap: 15px;
+    padding: 35px 0;
+}
+.footer_about{
+    display: flex;
+    padding: 25px 0;
+    max-width: 270px;
+    width: 100%;
 }
 .footer_nav_list{
     display: flex;
@@ -53,7 +65,11 @@ a {
    
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 567px){
+     .section {
+        padding: 0 20px;
+        margin: 0 auto
+    }
 .footer_section{
     display: flex;
     flex-direction: column;

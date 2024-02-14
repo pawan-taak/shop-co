@@ -1,7 +1,8 @@
+import React, { Fragment } from "react";
+import '../assets/css/main/main.css'; 
 
-import '../assets/css/main/main.css'; // Import your CSS file
-function Main(){
-  const Main_section = [
+function Main() {
+  const main_section = [
     {
       name: 'Sarah M.',
       stars: 5,
@@ -18,34 +19,16 @@ function Main(){
       quote: "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
     },
   ];
-  const a= Main_section.map((Main_section,index)=>(
-    <div key={index}>{Main_section}</div>
-  ))
   return(
-    <div>
-     <h1>name</h1>
-    </div>
+    main_section.map((item,index)=>{
+      return(
+        <h2>{item?.name}</h2>
+      ) 
+    })
+
   )
+
 }
- 
-const users = [
-  { id: 1, name: 'John Doe' },
-  { id: 2, name: 'Jane Doe' },
-  { id: 3, name: 'Bob Smith' },
-];
-
-const userItems = users.map((user) => (
-  <li key={user.id}>{user.name}</li>
-));
-
-return (
-  <div>
-    <h1>User List</h1>
-    <ul>{userItems}</ul>
-  </div>
-);
 
 
-  
- 
 export default Main;

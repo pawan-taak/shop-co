@@ -44,16 +44,17 @@ function Footer() {
   return (
       <div className="footer_section section">
         <div>
-          <h2>SHOP.CO</h2>
-          <div>
-            <p>
+          <h1>SHOP.CO</h1>
+            <p className='footer_about'>
               We have clothes that suit your style and which you’re proud to wear. From women to men.
             </p>
-          </div>
+          <div className='footer_logo_section'>
           <img src={require('./footerimg/twitter.png')} alt="footer git" />
           <img src={require('./footerimg/footer_fb.png')} alt="footer git" />
           <img src={require('./footerimg/footer_insta.png')} alt="footer git" />
           <img src={require('./footerimg/git.png')} alt="footer git" />
+          </div>
+        
         </div>
         <nav>
           <div className="footer_nav_bar">
@@ -71,7 +72,7 @@ function Footer() {
             ))}
           </div>
         </nav>
-        <hr />
+ 
       </div>
   );
 }
