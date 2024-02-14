@@ -1,5 +1,5 @@
-import { Fragment } from "react";
-import "../../assets/css/footer.css"
+
+import '../../assets/css/footer.css';
 
 function Footer() {
   const footerSections = [
@@ -42,28 +42,25 @@ function Footer() {
   ];
 
   return (
-    <Fragment>
       <div className="footer_section section">
         <div>
-          <h2>SHOP.CO</h2>
-          <div>
-            <p>
+          <h1>SHOP.CO</h1>
+            <p className='footer_about'>
               We have clothes that suit your style and which you’re proud to wear. From women to men.
             </p>
-          </div>
+         
           <img src={require('../../assets/img/twitter.png')} alt="footer git" />
           <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
           <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
           <img src={require('../../assets/img/git.png')} alt="footer git" />
         </div>
-
         <nav>
           <div className="footer_nav_bar">
-            {footerSections.map((section, index) => (
+            {footerSections.map((item, index) => (
               <div key={index} className="footer_support">
-                <h2>{section.title}</h2>
+                <h2>{item.title}</h2>
                 <div className="footer_nav_list">
-                  {section.links.map((link, linkIndex) => (
+                {item.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="footer_effect" href={link.href}>
                       {link.text}
                     </a>
@@ -73,9 +70,8 @@ function Footer() {
             ))}
           </div>
         </nav>
-        <hr />
+ 
       </div>
-    </Fragment>
   );
 }
 
