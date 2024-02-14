@@ -86,6 +86,7 @@
     text-align: center;
     color: var(--h_secondary_orange_color);
     background-color: var(--h_primary_blue_color);
+    
 }
 
 
@@ -306,7 +307,8 @@
     }
 
     .hero_button {
-        text-align: center;
+        display: flex;
+        justify-content: center;
         max-width: 358px;
         width: 100%;
     }
@@ -360,7 +362,10 @@
         padding: 16px 24px;
     }
 
-
+.arrivals_data{
+    display: flex;
+    flex-direction: column;
+}
 
 
 

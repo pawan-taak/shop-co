@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Header from './componets/header';
-import Footer from './componets/footer';
+import Arrival from './main/arrivals';
+import Header from './componets/header-footer/header';
+import Footer from './componets/header-footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    
+    <Arrival />
     <Footer />
   </React.StrictMode>
 );

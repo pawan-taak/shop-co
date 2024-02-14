@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import '../assets/css/footer.css';
+import "../../assets/css/footer.css"
 
 function Footer() {
   const footerSections = [
@@ -51,10 +51,10 @@ function Footer() {
               We have clothes that suit your style and which you’re proud to wear. From women to men.
             </p>
           </div>
-          <img src={require('./footerimg/twitter.png')} alt="footer git" />
-          <img src={require('./footerimg/footer_fb.png')} alt="footer git" />
-          <img src={require('./footerimg/footer_insta.png')} alt="footer git" />
-          <img src={require('./footerimg/git.png')} alt="footer git" />
+          <img src={require('../../assets/img/twitter.png')} alt="footer git" />
+          <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
+          <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
+          <img src={require('../../assets/img/git.png')} alt="footer git" />
         </div>
 
         <nav>

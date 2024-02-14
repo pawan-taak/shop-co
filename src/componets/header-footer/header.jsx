@@ -1,5 +1,6 @@
-import "./header/assest/header.css"
-import "../App.css"
+import "../../assets/css/header.css"
+import '../../App.css'
+import "../../main/arrivals"
 
 function Header() {
     return (
@@ -35,13 +36,13 @@ function Header() {
                         <li>Brands</li>
                     </ul>
                     <div className="header_input_section">
-                        <img src={require('./header/assest/icon/header_search_icon.png')} />
+                        <img src={require('../../assets/icon/header_search_icon.png')} />
                         <input type="text" placeholder="Search for products..." className="h_sm_heading" />
                     </div>
                     <div className="header_icon">
-                        <img src={require('./header/assest/icon/header_search_icon.png')} className="menu_search_icon" />
-                        <img src={require('./header/assest/icon/header_cart_icon.png')} />
-                        <img src={require('./header/assest/icon/header_user_icon.png')} />
+                        <img src={require('../../assets/icon/header_search_icon.png')} className="menu_search_icon" />
+                        <img src={require('../../assets/icon/header_cart_icon.png')} />
+                        <img src={require('../../assets/icon/header_user_icon.png')} />
                     </div>
                 </div>
             </div>
@@ -79,7 +80,7 @@ function Header() {
                                 </div>
                             </div>
                             <div className="hero_img">
-                                <img src={require('./header/assest/img/hero_img.png')} />
+                                <img src={require('../../assets/img/hero_img.png')} />
                             </div>
                         </div>
 
@@ -92,11 +93,11 @@ function Header() {
             <div className="company_back_section">
                 <div className="section">
                     <div className="company_name_section">
-                        <img src={require('./header/assest/img/versace.png')} className="company_img" />
-                        <img src={require('./header/assest/img/zara-logo.png')} className="company_img" />
-                        <img src={require('./header/assest/img/gucci-logo.png')} className="company_img" />
-                        <img src={require('./header/assest/img/prada-logo.png')} className="company_img" />
-                        <img src={require('./header/assest/img/calvin.png')} className="company_img" />
+                        <img src={require('../../assets/img/versace.png')} className="company_img" />
+                        <img src={require('../../assets/img/zara-logo.png')} className="company_img" />
+                        <img src={require('../../assets/img/gucci-logo.png')} className="company_img" />
+                        <img src={require('../../assets/img/prada-logo.png')} className="company_img" />
+                        <img src={require('../../assets/img/calvin.png')} className="company_img" />
                     </div>
                 </div>
             </div>
@@ -112,22 +113,22 @@ function Header() {
                         <div className="browse_card_section">
                             <span>
                                 <p class="browse_heading m_secondary_heading">Casual</p>
-                                <img src={require('./header/assest/img/casual_img.png')} className="browse_img" />
+                                <img src={require('../../assets/img/casual_img.png')} className="browse_img" />
                             </span>
 
                             <span>
                                 <p class="browse_heading m_secondary_heading">Formal</p>
-                                <img src={require('./header/assest/img/formal_img.png')} className="browse_img" />
+                                <img src={require('../../assets/img/formal_img.png')} className="browse_img" />
                             </span>
 
                             <span>
                                 <p class="browse_heading m_secondary_heading">Party</p>
-                                <img src={require('./header/assest/img/party_img.png')} className="browse_img party_img" />
+                                <img src={require('../../assets/img/party_img.png')} className="browse_img party_img" />
                             </span>
 
                             <span>
                                 <p class="browse_heading m_secondary_heading">Gym</p>
-                                <img src={require('./header/assest/img/gym_img.png')} className="browse_img gym_img" />
+                                <img src={require('../../assets/img/gym_img.png')} className="browse_img gym_img" />
                             </span>
                         </div>
                     </div>
