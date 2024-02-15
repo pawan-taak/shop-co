@@ -16,7 +16,9 @@
 
 /* header menu section */
  
- 
+ .toggle_button{
+    display: none;
+ }
 
 .menu_search_icon {
     display: none;
@@ -264,7 +266,9 @@
        
       /* toggle_button_start */
 
-
+.toggle_button{
+    display: block;
+}
 
 
 

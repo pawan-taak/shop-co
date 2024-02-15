@@ -30,8 +30,7 @@ li {
 }
 
 body {
-  font-family: 'Integral CF';
-  font-family: 'Satoshi';
+  font-family: 'Roboto';
 }
 
 .container {
@@ -118,7 +117,6 @@ body {
 /* hero main section common css */
 
 .m_primary_heading {
-  font-family: Integral CF;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 0em;
@@ -127,7 +125,6 @@ body {
 }
 
 .m_secondary_heading{
-  font-family: Satoshi;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0em;
