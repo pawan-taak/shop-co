@@ -1,0 +1,84 @@
+.hero_back_section {
+    background-color: #F0F0F0;
+}
+
+.hero_section {
+    display: flex;
+    padding: 151px 0;
+    justify-content: space-between;
+}
+
+.hero_text_section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 577px;
+    width: 100%;
+}
+
+.hero_button {
+    max-width: 210px;
+    width: 100%;
+    padding: 16px 54px;
+    border-radius: 62px;
+    text-align: center;
+    color: var(--h_secondary_orange_color);
+    background-color: var(--h_primary_blue_color);
+    
+}
+
+
+.vl {
+    border: 1px solid #0000001A;
+    width: 1px;
+}
+
+.hero_sub_section {
+    display: flex;
+    gap: 32px;
+    padding: 32px 0 0 0;
+}
+
+@media(max-width:567px){
+    .hero_img {
+        max-width: 390px;
+        width: 100%;
+    }
+
+    .hero_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 50px 0;
+    }
+
+    .hero_button {
+        display: flex;
+        justify-content: center;
+        max-width: 358px;
+        width: 100%;
+    }
+
+    .hero_main_heading {
+        max-width: 315px;
+        width: 100%;
+    }
+
+    .hero_main_text {
+        max-width: 380px;
+        width: 100%;
+    }
+
+    .hero_sub_section {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .price_text {
+        display: grid;
+        grid-column: 1/4;
+        justify-content: center;
+    }
+
+}

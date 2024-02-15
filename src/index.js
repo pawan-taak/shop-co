@@ -17,7 +17,6 @@ root.render(
     <Header />
     <Hero />
     <Partner />
-
     <Browse />
     <Arrival />
     {/* <Data /> */}

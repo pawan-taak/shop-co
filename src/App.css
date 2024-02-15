@@ -124,10 +124,92 @@ body {
 
 }
 
-.m_secondary_heading{
+.m_secondary_heading {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
 
+}
+
+@media(max-width:567px) {
+  .section {
+    padding: 0 20px;
+    margin: 0 auto
+  }
+
+  .m_primary_heading {
+    font-size: 32px;
+  }
+
+  .m_secondary_heading {
+    font-size: 24px;
+  }
+
+  .h_primary {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .h_secondary {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .h_heading {
+    font-family: Integral CF;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .h_sm_heading {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+  }
+
+  .h_sm_prime {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+  }
+
+  .h_mm_heading {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .h_ss_heading {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
