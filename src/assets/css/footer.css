@@ -23,6 +23,41 @@ a {
     padding: 0 100px;
   }
 
+  .about_date{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 2px solid black;
+    display: flex; 
+    border-radius: 20px;
+    background-color: black;
+margin-bottom: 50px;
+}
+.footer_para{
+    max-width: 551px;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+}
+.subscribe_btn{
+    padding: 0 36px;
+    width: 349px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.mail{
+  padding: 10px;
+  width: 349px;
+  border-radius: 20px;
+}
+.mail_section_left{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 36px;
+}
+
+
 .footer_section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -65,7 +100,8 @@ a {
    
 }
 
-@media only screen and (max-width: 567px){
+
+@media(max-width: 567px){
      .section {
         padding: 0 20px;
         margin: 0 auto
@@ -78,4 +114,10 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .about_date{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
