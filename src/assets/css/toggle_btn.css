@@ -1,28 +1,25 @@
-.toggle_button {
-    display: none;
-}
+
 
 @media(max-width:567px) {
-
-    .toggle_button {
-        position: absolute;
-        display: block;
-        left: 70px;
-        top: 65px;
-    }
-
     .header_menu_item {
         display: none;
     }
 
-    .menu_bar {
-        position: absolute;
-        border: 1px solid black;
-        border-radius: 20px;
-        width: 200px;
-          background: #151719;
-        color: white;
+   
 
+   
+    .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: #151719;
+        left: -200px;
+        transition: all 500ms linear;
+
+    }
+
+    .sidebar.active {
+        left: 0px;
     }
 
     .menu_bar li {

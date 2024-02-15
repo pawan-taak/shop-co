@@ -57,36 +57,47 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footer_section section">
-        <div>
-          <h1>SHOP.CO</h1>
-          <p className='footer_about'>
-            We have clothes that suit your style and which you’re proud to wear. From women to men.
-          </p>
+      <div class="last_sub_section">
+        <div class="last_white_section"></div>
+        <div class="last_black_section"></div>
+      </div>
 
-          <img src={require('../../assets/img/twitter.png')} alt="footer git" />
-          <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
-          <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
-          <img src={require('../../assets/img/git.png')} alt="footer git" />
-        </div>
-        <nav>
-          <div className="footer_nav_bar">
-            {footerSections.map((item, index) => (
-              <div key={index} className="footer_support">
-                <h2>{item.title}</h2>
-                <div className="footer_nav_list">
-                  {item.links.map((link, linkIndex) => (
-                    <a key={linkIndex} className="footer_effect" href={link.href}>
-                      {link.text}
-                    </a>
-                  ))}
-                </div>
+      <div className='footer_back_section'>
+        <div className='section'>
+          <div className="footer_section section">
+            <div>
+              <h1>SHOP.CO</h1>
+              <p className='footer_about'>
+                We have clothes that suit your style and which you’re proud to wear. From women to men.
+              </p>
+
+              <img src={require('../../assets/img/twitter.png')} alt="footer git" />
+              <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
+              <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
+              <img src={require('../../assets/img/git.png')} alt="footer git" />
+            </div>
+            <nav>
+              <div className="footer_nav_bar">
+                {footerSections.map((item, index) => (
+                  <div key={index} className="footer_support">
+                    <h2>{item.title}</h2>
+                    <div className="footer_nav_list">
+                      {item.links.map((link, linkIndex) => (
+                        <a key={linkIndex} className="footer_effect" href={link.href}>
+                          {link.text}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </nav>
+
           </div>
-        </nav>
+        </div>
 
       </div>
+
     </>
 
   );
