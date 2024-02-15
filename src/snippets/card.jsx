@@ -5,7 +5,7 @@ const Card=({data})=>{
         <div className="card">
         {
             data?.img !==undefined &&
-            <img src={require('../../assets/icon/Star 2.png')}></img>
+            {/* <img src={require('../../assets/icon/Star 2.png')}></img> */}
         }
         <p className="card_name">{data?.title}</p>
         <p className="info">${data?.stars}</p>
