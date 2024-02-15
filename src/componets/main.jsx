@@ -22,7 +22,13 @@ function Main() {
   return(
     main_section.map((item,index)=>{
       return(
-        <h2>{item?.name}</h2>
+        <>
+        <div className="section">
+        <h2>{item.name}</h2>
+        <img src={require('../main/assest/img/star.png')}></img>
+        <p>{item.quote}</p>
+        </div>
+        </>
       ) 
     })
 

@@ -42,13 +42,28 @@ function Footer() {
   ];
 
   return (
+    <>
+      <div className='container'>
+        <div className='section'>
+          <div className="about_date">
+            <div className='mail_section_right'>
+              <h1 className='footer_para'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+            </div>
+            <div className='mail_section_left'>
+              <input className='mail' placeholder='enter your email address'></input>
+              <button className='subscribe_btn'>Subscribe to Newsletter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="footer_section section">
         <div>
           <h1>SHOP.CO</h1>
-            <p className='footer_about'>
-              We have clothes that suit your style and which you’re proud to wear. From women to men.
-            </p>
-         
+          <p className='footer_about'>
+            We have clothes that suit your style and which you’re proud to wear. From women to men.
+          </p>
+
           <img src={require('../../assets/img/twitter.png')} alt="footer git" />
           <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
           <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
@@ -60,7 +75,7 @@ function Footer() {
               <div key={index} className="footer_support">
                 <h2>{item.title}</h2>
                 <div className="footer_nav_list">
-                {item.links.map((link, linkIndex) => (
+                  {item.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="footer_effect" href={link.href}>
                       {link.text}
                     </a>
@@ -70,8 +85,10 @@ function Footer() {
             ))}
           </div>
         </nav>
- 
+
       </div>
+    </>
+
   );
 }
 
