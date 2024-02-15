@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './componets/header';
 import Footer from './componets/footer';
+import Filter from './componets/category/filter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
+    <Filter/>
     <Footer />
   </React.StrictMode>
 );
