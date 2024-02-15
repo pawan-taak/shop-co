@@ -11,12 +11,17 @@ const Arrival=()=>{
     {
       title: 'SKINNY FIT JEANS',
       stars: 5,
-      price: '$120',       
+      price: '$240',       
     },
     {
       title: 'CHECKERED SHIRT',
       stars: 5,
-      price: '$120',      
+      price: '$180',      
+    },
+    {
+      title: 'SLEEVE STRIPED T-SHIRT',
+      stars: 5,
+      price: '$130',      
     },
   ];
   return(
@@ -24,7 +29,9 @@ const Arrival=()=>{
       return(
         // <h2>{item?.title}</h2>
         <>
-        
+        <h2>{item?.title}</h2>
+        <img src={require('../../assets/img/star.png')}></img>
+        <p>{item?.price}</p>
 
 
         </>
