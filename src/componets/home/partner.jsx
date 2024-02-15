@@ -1,19 +1,42 @@
 import React from 'react'
 import '../../assets/css/partner.css'
 
+
 const Partner = () => {
+  let partners = [
+    {
+      img: 'versace.png',
+    },
+    {
+      img: 'zara-logo.png',
+    },
+    {
+      img: 'gucci-logo.png',
+    },
+    {
+      img: 'prada-logo.png',
+    },
+    {
+      img: 'calvin.png',
+    },
+  ];
+
+
+
   return (
-    <div className="company_back_section">
-                <div className="section">
-                    <div className="company_name_section">
-                        <img src={require('../../assets/img/versace.png')} className="company_img" />
-                        <img src={require('../../assets/img/zara-logo.png')} className="company_img" />
-                        <img src={require('../../assets/img/gucci-logo.png')} className="company_img" />
-                        <img src={require('../../assets/img/prada-logo.png')} className="company_img" />
-                        <img src={require('../../assets/img/calvin.png')} className="company_img" />
-                    </div>
-                </div>
-            </div>
+    <div className='company_back_section'>
+      <div className='section'>
+        <div className='company_name_section'>
+          {
+            partners.map((item, index) => {
+              return (
+                <img src={require(`../../assets/img/${item?.img}`)} />
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
   )
 }
 
