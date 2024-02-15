@@ -1,7 +1,8 @@
 import "../../assets/css/header.css"
 import '../../App.css'
 import "../../main/arrivals"
-import Demo from "./toggle_btn"
+import '../header-footer/toggle_btn'
+import ToggleBtn from "./toggle_btn"
  
 
 function Header() {
@@ -22,7 +23,7 @@ function Header() {
             <div className="section">
                 <div className="header_menu_section">
                     <div className="toggle_bar">                         
-                       <Demo></Demo>
+                       <ToggleBtn></ToggleBtn>
                         <h3 className="h_heading">SHOP.CO</h3>
                     </div>
 
