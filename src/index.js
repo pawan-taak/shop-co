@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Arrival from './componets/home/review';
 import Header from './componets/header-footer/header';
 import Footer from './componets/header-footer/footer';
 import Hero from './componets/home/hero';
 import Partner from './componets/home/partner';
 import Browse from './componets/home/browse';
 // import Data from './componets/main'
+import Review from './componets/home/review';
+import Arrival from './componets/home/arrival';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,8 +19,9 @@ root.render(
     <Partner />
 
     <Browse />
-    {/* <Arrival /> */}
+    <Arrival />
     {/* <Data /> */}
+    <Review />
     <Footer />
 
     
