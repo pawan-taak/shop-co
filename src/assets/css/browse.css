@@ -40,18 +40,7 @@
 
 @media(max-width:567px){
 
-    .company_name_section {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        row-gap: 15px;
-    }
-
-    .company_name_section img {
-        max-width: 116px;
-        width: 100%;
-        height: 26px;
-    }
+    
 
     .browse_img {
         width: 310px;
