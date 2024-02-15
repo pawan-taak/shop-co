@@ -1,0 +1,11 @@
+.shirts_scetion{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+@media(max-width: 567px){
+    .shirts_scetion{
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+    }
+}
