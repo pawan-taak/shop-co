@@ -2,17 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Arrival from './main/arrivals';
+// import Arrival from './componets/home/review';
 import Header from './componets/header-footer/header';
 import Footer from './componets/header-footer/footer';
-import Main from './componets/main'
+import Hero from './componets/home/hero';
+import Partner from './componets/home/partner';
+import Browse from './componets/home/browse';
+// import Data from './componets/main'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <Arrival />
-    <Main />
+    <Hero />
+    <Partner />
+
+    <Browse />
+    {/* <Arrival /> */}
+    {/* <Data /> */}
     <Footer />
+
     
   </React.StrictMode>
 );

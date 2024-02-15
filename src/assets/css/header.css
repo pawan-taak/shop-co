@@ -15,9 +15,7 @@
 }
 
 /* header menu section */
-.toggle_button {
-    display: none;
-}
+ 
  
 
 .menu_search_icon {
@@ -252,17 +250,13 @@
     }
 
     /* header section start */
-    .toggle_button {
-        display: block;
-    }
+    
 
     .menu_search_icon {
         display: block;
     }
 
-    .header_menu_item {
-        display: none;
-    }
+   
 
     .header_input_section {
         display: none;

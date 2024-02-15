@@ -1,29 +1,22 @@
-import { Fragment, useState } from 'react'
-import '../main/assest/arrivals.css'
-import Card from "./card"
+import { Fragment } from 'react'
+import '../../assets/css/review.css'
+// import Card from '../../snippets/card'
 
-const Arrival = () => {
+const Review = () => {
 
 
     let arrivals = [
         {
-    
             name: "Sarah M.",
             info: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-
         },
         {
-
             name: "Alex K.",
             info: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-
         },
         {
-
-
             name: "James L.",
             info: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-
         },
 
         {
@@ -46,12 +39,12 @@ const Arrival = () => {
                 arrivals?.map((item, index) => {
                     return (
                         <Fragment key={index}>
-                            <Card data={item} />
+                            {/* <Card data={item} /> */}
                         </Fragment>
                     )
                 })
             }
-            
+
         </div>
     )
 }
@@ -60,5 +53,5 @@ const Arrival = () => {
 
 
 
-export default Arrival
+export default Review
 
