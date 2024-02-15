@@ -10,6 +10,7 @@ import Browse from './componets/home/browse';
 // import Data from './componets/main'
 import Review from './componets/home/review';
 import Arrival from './componets/home/arrival';
+import Selling from './componets/home/top_selling';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,8 +18,10 @@ root.render(
     <Header />
     <Hero />
     <Partner />
-    <Browse />
     <Arrival />
+    <Selling />
+    <Browse />
+    
     {/* <Data /> */}
     <Review />
     <Footer />
