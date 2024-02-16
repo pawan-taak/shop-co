@@ -1,18 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './componets/header';
-import Footer from './componets/footer';
+import Header from './componets/header-footer/header';
+import Footer from './componets/header-footer/footer';
+import Hero from './componets/home/hero';
+import Partner from './componets/home/partner';
+import Browse from './componets/home/browse';
+// import Data from './componets/main'
+import Review from './componets/home/review';
+import Arrival from './componets/home/arrival';
 import Filter from './componets/category/filter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <Filter/>
+    <Hero />
+    <Partner />
+
+    <Browse />
+    <Arrival />
+    {/* <Data /> */}
+    <Review />
     <Footer />
+    <Filter/>
+    
   </React.StrictMode>
 );
 

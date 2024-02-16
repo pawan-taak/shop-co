@@ -1,0 +1,19 @@
+.review_section{
+   width: 400px;
+    border: 1px solid #000000; 
+    border-radius: 20px;
+    padding: 28px 32px;
+}
+.review{
+    display: flex;
+    gap: 20px;
+    padding-bottom:80px ;
+}
+.info_review{
+    padding-top:12px;
+}
+.review_heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 40px;
+}

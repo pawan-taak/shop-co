@@ -1,0 +1,39 @@
+
+
+@media(max-width:567px) {
+    .header_menu_item {
+        display: none;
+    }
+
+   
+
+   
+    .sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: #151719;
+        left: -200px;
+        transition: all 500ms linear;
+
+    }
+
+    .sidebar.active {
+        left: 0px;
+    }
+
+    .menu_bar li {
+        color: rgba(230, 230, 230, 0.9);
+        list-style: none;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+        text-align: center;
+    }
+
+    
+
+
+
+
+
+}
