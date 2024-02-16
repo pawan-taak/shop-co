@@ -31,7 +31,7 @@ const Arrival = () => {
     ];
     return (
         <div className="section">
-        <h2>NEW ARRIVALS</h2>
+        <div className="arrivals_heading m_primary_heading"><h2>NEW ARRIVALS</h2></div>
             <div className="shirts_scetion">
                 {
                     data.map((item, index) => {
@@ -44,15 +44,17 @@ const Arrival = () => {
                                     <img src={require('../../assets/img/star.png')}></img>
                                     <p>{item?.price}</p>
                                 </div>
-
                             </>
                         )
+                        
                     })
 
                 }
+               
             </div>
         </div>
     )
+    
 
 }
 
