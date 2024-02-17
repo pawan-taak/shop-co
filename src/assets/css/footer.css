@@ -83,6 +83,7 @@ a {
 
 .footer_back_section {
     background: #F0F0F0;
+    
 }
 
 .footer_section {
@@ -147,6 +148,7 @@ a {
     .footer_section {
         display: flex;
         flex-direction: column;
+        padding: 31.58px 0;
     }
 
     .footer_nav_bar {
@@ -157,6 +159,7 @@ a {
     .about_date {
         display: flex;
         flex-direction: column;
+        padding: 0px;
     }
 
 }

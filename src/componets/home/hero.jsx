@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/css/hero.css'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
                                 <p className="hero_main_text h_sm_heading">Browse through our diverse range of meticulously crafted garments,
                                     designed to bring out your individuality and cater to your sense of style.
                                 </p>
-                                <button className="hero_button h_sm_prime">Shop Now</button>
+                                <Link to="/products" className="hero_button h_sm_prime">Shop Now</Link>
 
                                 <div className="hero_sub_section">
                                     <div>

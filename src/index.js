@@ -2,31 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/home';
+import Products from './pages/products';
 import Header from './componets/header-footer/header';
 import Footer from './componets/header-footer/footer';
-import Hero from './componets/home/hero';
-import Partner from './componets/home/partner';
-import Browse from './componets/home/browse';
-// import Data from './componets/main'
-import Review from './componets/home/review';
-import Arrival from './componets/home/arrival';
-import Selling from './componets/home/top_selling';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <Hero />
-    <Partner />
-    <Arrival />
-    <Selling />
-    <Browse />
-    
-    {/* <Data /> */}
-    <Review />
-    <Footer />
-
-    
+    <App/>
   </React.StrictMode>
 );
 
