@@ -12,5 +12,6 @@
     .shirts_scetion{
      display: flex;
      flex-direction: column;
+     overflow: auto;
     }
 }

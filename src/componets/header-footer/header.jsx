@@ -3,6 +3,7 @@ import '../../App.css'
 import "../home/review"
 import ToggleBtn from "../../snippets/toggle_btn"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 function Header() {
@@ -30,7 +31,7 @@ function Header() {
                                 <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <h3 className="h_heading">SHOP.CO</h3>
+                        <Link to="/" className="h_heading">SHOP.CO</Link>
                     </div>
 
                     <ul className="header_menu_item  h_sm_heading">
