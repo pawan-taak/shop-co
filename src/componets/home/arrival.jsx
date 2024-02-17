@@ -36,7 +36,7 @@ const Arrival = () => {
                 {
                     data.map((item, index) => {
                         return (
-                            // <h2>{item?.title}</h2>
+                           
                             <>
                                 <div>
                                     <img src={require(`../../assets/img/arrivals_img/${item?.img}`)}></img>
