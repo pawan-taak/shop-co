@@ -11,7 +11,7 @@
 @media(max-width: 567px){
     .shirts_scetion{
      display: flex;
-     flex-direction: column;
+     flex-direction: row;
      overflow: auto;
     }
 }

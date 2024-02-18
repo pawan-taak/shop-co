@@ -10,7 +10,7 @@
 @media(max-width: 567px){
     .selling_section{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         overflow:auto;
         
     }
