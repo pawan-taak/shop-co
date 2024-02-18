@@ -11,7 +11,5 @@
     .selling_section{
         display: flex;
         flex-direction: column;
-        overflow:auto;
-        
     }
 }
