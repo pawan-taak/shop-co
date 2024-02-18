@@ -7,14 +7,16 @@
         position: absolute;
         width: 200px;
         height: 100%;
-        background: #151719;
+        background: #3f84ca;
         left: -200px;
         transition: all 500ms linear;
+        z-index: 7;
 
     }
 
     .sidebar.active {
         left: 0px;
+
     }
 
     .menu_bar li {
@@ -23,6 +25,27 @@
         padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
         text-align: center;
+
+    }
+
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+
     }
 
 

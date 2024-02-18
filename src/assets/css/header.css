@@ -13,7 +13,9 @@
 }
 
 /* header menu section */
-
+.menu_bar{
+    display: none;
+}
 .toggle_button {
     display: none;
 }
@@ -83,6 +85,8 @@
     .header_menu_section {
         display: flex;
     }
-
+.menu_bar{
+    display: block;
+}
 
 }
