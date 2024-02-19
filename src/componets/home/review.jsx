@@ -26,7 +26,8 @@ const Review = () => {
     return (
         <div className='section'>
             <div className='review_heading'>
-                <h2 className='m_primary_heading'>OUR HAPPY CUSTOMERS</h2>
+
+                <h2 className='review_text m_primary_heading'>OUR HAPPY CUSTOMERS</h2>
                 <div className='review_arrow'>
                     <img src={require('../../assets/icon/arrow_right.png')}></img>
                     <img src={require('../../assets/icon/arrow_left.png')}></img>

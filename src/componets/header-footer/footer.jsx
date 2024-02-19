@@ -65,7 +65,7 @@ function Footer() {
       <div className='footer_back_section'>
         <div className='section'>
           <div className="footer_section section">
-            <div>
+            <div className='footer_main_heading'>
               <h1>SHOP.CO</h1>
               <p className='footer_about'>
                 We have clothes that suit your style and which you’re proud to wear. From women to men.

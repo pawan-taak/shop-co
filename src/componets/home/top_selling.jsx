@@ -30,7 +30,7 @@ const Selling=()=>{
     ];
     return(
       <div className="section">
-      <div className="top_selling_section m_primary_heading"><h2>TOP SELLING</h2></div>
+      <div className="top_selling_section "><h2 className="m_primary_heading">TOP SELLING</h2></div>
       <div className="selling_section">
 
       

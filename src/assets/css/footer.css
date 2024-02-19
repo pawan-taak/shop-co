@@ -63,14 +63,16 @@ a {
 
 .subscribe_btn {
     padding: 0 36px;
-    width: 349px;
+    max-width: 349px;
+    width:100%;
     border-radius: 20px;
     padding: 10px;
 }
 
 .mail {
     padding: 10px;
-    width: 349px;
+    max-width: 349px;
+    width:100%;
     border-radius: 20px;
 }
 
@@ -159,9 +161,13 @@ a {
     .about_date {
         display: flex;
         flex-direction: column;
-        /* max-width: 358px;
-        width: 100px; */
-        padding: 0px;
+        max-width: 358px;
+        width: 100%;
+        padding: 0px 16px;
     }
+   .footer_main_heading{
+    padding-top: 50px;
+   }
 
+ 
 }

@@ -33,7 +33,7 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className="hero_img">
-                                <img src={require('../../assets/img/hero_img.png')} />
+                                <img src={require('../../assets/img/hero_img.png')} className='hero_mob_img' />
                             </div>
                         </div>
 

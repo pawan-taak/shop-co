@@ -6,17 +6,18 @@ const Browse = () => {
     <div className="container">
                 <div className="section">
                     <div className="browse_section">
+                        
                         <h2 className="m_primary_heading">BROWSE BY DRESS STYLE</h2>
 
                         <div className="browse_card_section">
                             <span>
                                 <p class="browse_heading m_secondary_heading">Casual</p>
-                                <img src={require('../../assets/img/casual_img.png')} className="browse_img" />
+                                <img src={require('../../assets/img/casual_img.png')} className="browse_img causal_img" />
                             </span>
 
                             <span>
                                 <p class="browse_heading m_secondary_heading">Formal</p>
-                                <img src={require('../../assets/img/formal_img.png')} className="browse_img" />
+                                <img src={require('../../assets/img/formal_img.png')} className="browse_img formal_img"/>
                             </span>
 
                             <span>
