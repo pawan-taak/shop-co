@@ -57,7 +57,9 @@
     display: flex;
     gap: 14px;
 }
-
+.mob_close_toggle{
+    display: none;
+}
 
 
 @media(max-width:567px) {
@@ -88,5 +90,7 @@
 .menu_bar{
     display: block;
 }
-
+.mob_close_toggle{
+    display: block;
+}
 }
