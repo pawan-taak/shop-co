@@ -78,6 +78,13 @@ body {
   text-align: left;
 
 }
+.xxl_heading{
+font-size: 20px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0em;
+
+}
 
 .h_sm_heading {
   font-size: 16px;
@@ -174,7 +181,9 @@ body {
     text-align: left;
 
   }
-
+.xxl_heading{
+  font-size: 16px;
+}
   .h_sm_heading {
     font-family: Satoshi;
     font-size: 14px;
