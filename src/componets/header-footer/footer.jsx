@@ -62,6 +62,7 @@ function Footer() {
         <div class="last_black_section"></div>
       </div>
 
+      <div className='container'>
       <div className='footer_back_section'>
         <div className='section'>
           <div className="footer_section section">
@@ -70,7 +71,6 @@ function Footer() {
               <p className='footer_about'>
                 We have clothes that suit your style and which you’re proud to wear. From women to men.
               </p>
-
               <img src={require('../../assets/img/twitter.png')} alt="footer git" />
               <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
               <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
@@ -92,14 +92,11 @@ function Footer() {
                 ))}
               </div>
             </nav>
-
           </div>
         </div>
-
+        </div>
       </div>
-
     </>
-
   );
 }
 

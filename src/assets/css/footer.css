@@ -32,11 +32,11 @@ a {
     border: 2px solid black;
     border-radius: 20px;
     background-color: black;
-    max-width: 1140px;
+    max-width: 1240px;
     width: 100%;
     padding: 36px 64px;
     justify-content: space-between;
-    gap: 261px;
+  
 }
 
 .last_sub_section {
@@ -60,6 +60,7 @@ a {
     width: 100%;
     color: white;
     padding: 10px 0;
+    padding: 32px 24px 0;
 }
 
 .subscribe_btn {
@@ -112,7 +113,7 @@ a {
 .footer_about {
     display: flex;
     padding: 25px 0;
-    max-width: 270px;
+    /* max-width: 248px; */
     width: 100%;
 }
 
@@ -153,8 +154,10 @@ a {
     }
 
     .footer_nav_bar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+      /* display: flex;
+      flex-direction: column; */
+      display: grid;
+      grid-template-columns: auto auto;
     }
 
     .about_date {
