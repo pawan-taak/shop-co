@@ -2,14 +2,11 @@ import '../assets/css/card.css'
 
 const Card=({data})=>{
     return(
-        <div className="card">
-        {
-            data?.img !==undefined &&
-            {/* <img src={require('../../assets/icon/Star 2.png')}></img> */}
-        }
-        <p className="card_name">{data?.title}</p>
-        <p className="info">${data?.stars}</p>
-        
+        <div>
+        {/* <img src={require(`../assets/img/top_selling/${data.img}`)}/> */}
+        <h2 className='card_title'>{data?.title}</h2>
+        <img src={require('../assets/img/star.png')}></img>
+        <p>{data?.price}</p>
         </div>
     )
 }

@@ -26,7 +26,8 @@ const Review = () => {
     return (
         <div className='section'>
             <div className='review_heading'>
-                <h2 className='m_primary_heading'>OUR HAPPY CUSTOMERS</h2>
+
+                <h2 className='review_text m_primary_heading'>OUR HAPPY CUSTOMERS</h2>
                 <div className='review_arrow'>
                     <img src={require('../../assets/icon/arrow_right.png')}></img>
                     <img src={require('../../assets/icon/arrow_left.png')}></img>
@@ -37,14 +38,14 @@ const Review = () => {
                 {
                     arrivals.map((item, index) => {
                         return (
-                            <>
+                            <Fragment key={index}>
                                 <div className='review_section'>
                                     <img src={require('../../assets/img/star.png')}></img>
                                     <h2>{item?.name}
                                         <img src={require('../../assets/img/verified_logo.png')}></img></h2>
                                     <p className='info_review'>{item?.info}</p>
                                 </div>
-                            </>
+                            </Fragment>
                         )
                     })
 

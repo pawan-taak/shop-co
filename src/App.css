@@ -26,7 +26,6 @@ li {
   --h_primary_blue_color: #000000;
   --h_secondary_orange_color: #ffffff;
   --white_dark_color: #c6c2c2;
-
 }
 
 body {
@@ -76,6 +75,13 @@ body {
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
+
+}
+.xxl_heading{
+font-size: 20px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0em;
 
 }
 
@@ -174,7 +180,9 @@ body {
     text-align: left;
 
   }
-
+.xxl_heading{
+  font-size: 16px;
+}
   .h_sm_heading {
     font-family: Satoshi;
     font-size: 14px;

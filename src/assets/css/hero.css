@@ -40,9 +40,14 @@
 }
 
 @media(max-width:567px){
-    .hero_img {
+    .hero_text_section{
+        padding-top: 30px;
+    }
+   
+    .hero_mob_img{
         max-width: 390px;
         width: 100%;
+        vertical-align: bottom;
     }
 
     .hero_section {
@@ -50,7 +55,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        padding: 50px 0;
+        padding: 0px 0;
     }
 
     .hero_button {
@@ -73,6 +78,7 @@
     .hero_sub_section {
         display: grid;
         grid-template-rows: auto auto;
+        justify-content: space-around;
     }
 
     .price_text {

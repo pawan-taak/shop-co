@@ -1,5 +1,6 @@
 import React from "react";
 import '../../assets/css/top_selling.css'
+import Card from "../../snippets/card";
 
 
 const Selling=()=>{
@@ -30,23 +31,16 @@ const Selling=()=>{
     ];
     return(
       <div className="section">
-      <div className="top_selling_section m_primary_heading"><h2>TOP SELLING</h2></div>
+      <div className="top_selling_section "><h2 className="m_primary_heading">TOP SELLING</h2></div>
       <div className="selling_section">
 
       
       {
       data.map((item,index)=>{
         return(
-          // <h2>{item?.title}</h2>
-          <>
-         <div>
-          <img src={require(`../../assets/img/top_selling/${item?.img}`)}></img>
-          <h2>{item?.title}</h2>
-          <img src={require('../../assets/img/star.png')}></img>
-          <p>{item?.price}</p>
-          </div>
+         
+         <Card key={index+new Date()} data={item}/>
   
-          </>
         ) 
       })
     }

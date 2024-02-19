@@ -31,20 +31,13 @@ const Arrival = () => {
     ];
     return (
         <div className="section">
-        <div className="arrivals_heading m_primary_heading"><h2>NEW ARRIVALS</h2></div>
+        <div className="arrivals_heading "><h2 className="m_primary_heading">NEW ARRIVALS</h2></div>
             <div className="shirts_scetion">
                 {
                     data.map((item, index) => {
                         return (
                            
-                            <>
-                                <div>
-                                    <img src={require(`../../assets/img/arrivals_img/${item?.img}`)}></img>
-                                    <h2>{item?.title}</h2>
-                                    <img src={require('../../assets/img/star.png')}></img>
-                                    <p>{item?.price}</p>
-                                </div>
-                            </>
+                            <Card key={index+new Date()} data={item}/>
                         )
                         
                     })
