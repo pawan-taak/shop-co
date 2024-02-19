@@ -38,6 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 25px;
 }
 
 .browse_mob_section {
