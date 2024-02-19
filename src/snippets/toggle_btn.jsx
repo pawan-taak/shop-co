@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import "../assets/css/toggle_btn.css"
 
 
-function ToggleBtn({show}) {
+function ToggleBtn({show, setShow}) {
      
     return (
         <>        
         <div className={`${show===true?"active":""} sidebar`} >        
+        <button onClick={()=>{setShow(false)}}>X</button>
          {
             
             <ul className="menu_bar h_sm_heading">                               

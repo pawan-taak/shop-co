@@ -38,14 +38,14 @@ const Review = () => {
                 {
                     arrivals.map((item, index) => {
                         return (
-                            <>
+                            <Fragment key={index}>
                                 <div className='review_section'>
                                     <img src={require('../../assets/img/star.png')}></img>
                                     <h2>{item?.name}
                                         <img src={require('../../assets/img/verified_logo.png')}></img></h2>
                                     <p className='info_review'>{item?.info}</p>
                                 </div>
-                            </>
+                            </Fragment>
                         )
                     })
 

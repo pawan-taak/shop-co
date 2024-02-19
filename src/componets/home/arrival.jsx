@@ -37,14 +37,7 @@ const Arrival = () => {
                     data.map((item, index) => {
                         return (
                            
-                            <>
-                                <div>
-                                    <img src={require(`../../assets/img/arrivals_img/${item?.img}`)}></img>
-                                    <h2>{item?.title}</h2>
-                                    <img src={require('../../assets/img/star.png')}></img>
-                                    <p>{item?.price}</p>
-                                </div>
-                            </>
+                            <Card key={index+new Date()} data={item}/>
                         )
                         
                     })
