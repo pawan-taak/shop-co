@@ -34,6 +34,7 @@
 .header_menu_item {
     display: flex;
     gap: 24px;
+    white-space: nowrap;
 }
 
 .header_input_section {
