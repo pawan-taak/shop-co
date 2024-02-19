@@ -5,10 +5,7 @@ import "../assets/css/toggle_btn.css"
 function ToggleBtn({show}) {
      
     return (
-
-
-        <>
-        
+        <>        
         <div className={`${show===true?"active":""} sidebar`} >        
          {
             
@@ -18,16 +15,10 @@ function ToggleBtn({show}) {
                     <li>New Arrivals</li>
                     <li>Brands</li>
                 </ul>                
-            }
-        
+            }        
         </div>
-        <div className={`sidebar-overlay ${show===true?'active':''}`}></div>     
-          
+        <div className={`sidebar-overlay ${show===true?'active':''}`}></div>               
         </>
-
-
-
-
     )
 }
 export default ToggleBtn
