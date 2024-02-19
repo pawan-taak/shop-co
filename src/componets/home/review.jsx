@@ -29,8 +29,8 @@ const Review = () => {
 
                 <h2 className='review_text m_primary_heading'>OUR HAPPY CUSTOMERS</h2>
                 <div className='review_arrow'>
-                    <img src={require('../../assets/icon/arrow_right.png')}></img>
-                    <img src={require('../../assets/icon/arrow_left.png')}></img>
+                    <img src={require('../../assets/icon/arrow_right.png')} alt='#'></img>
+                    <img src={require('../../assets/icon/arrow_left.png')} alt='#'></img>
                 </div>
             </div>
 
@@ -40,9 +40,9 @@ const Review = () => {
                         return (
                             <Fragment key={index}>
                                 <div className='review_section'>
-                                    <img src={require('../../assets/img/star.png')}></img>
+                                    <img src={require('../../assets/img/star.png')} alt='#'></img>
                                     <h2>{item?.name}
-                                        <img src={require('../../assets/img/verified_logo.png')}></img></h2>
+                                        <img src={require('../../assets/img/verified_logo.png')} alt='#'></img></h2>
                                     <p className='info_review'>{item?.info}</p>
                                 </div>
                             </Fragment>

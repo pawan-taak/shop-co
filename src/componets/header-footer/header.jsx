@@ -24,7 +24,7 @@ function Header() {
                 <div className="header_menu_section">
                     <div className="toggle_bar">
                         {/* <ToggleBtn/> */}
-                        <button onClick={() => {setShow(true)}} class="toggle_button">
+                        <button onClick={() => {setShow(true)}} className="toggle_button">
                         <svg
   xmlns="http://www.w3.org/2000/svg"
   width={24}

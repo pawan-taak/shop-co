@@ -20,12 +20,12 @@ const Hero = () => {
                                         <h2 className="h_secondary">200+</h2>
                                         <p className="h_sm_heading">International Brands</p>
                                     </div>
-                                    <div class="vl"></div>
+                                    <div className="vl"></div>
                                     <div>
                                         <h2 className="h_secondary">2,000+</h2>
                                         <p className="h_sm_heading">High-Quality Products</p>
                                     </div>
-                                    <div class="vl"></div>
+                                    <div className="vl"></div>
                                     <div className="price_text">
                                         <h2 className="h_secondary">30,000+</h2>
                                         <p className="h_sm_heading">Happy Customers</p>
@@ -33,7 +33,7 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div className="hero_img">
-                                <img src={require('../../assets/img/hero_img.png')} className='hero_mob_img' />
+                                <img src={require('../../assets/img/hero_img.png')} alt='#' className='hero_mob_img' />
                             </div>
                         </div>
 
