@@ -8,7 +8,7 @@ import Footer from './componets/header-footer/footer';
 function App() {
   return (
   <>
-  <BrowserRouter>
+  <BrowserRouter >
       <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>
