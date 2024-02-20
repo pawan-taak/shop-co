@@ -37,22 +37,22 @@ const Browse = () => {
                     <div className="browse_mob_section">
                         <span>
                             <p className="browse_mob_heading m_secondary_heading">Casual</p>
-                            <img src={require('../../assets/img/casual_mb_img.png')} alt="browse_mob_img causal_img" />
+                            <img src={require('../../assets/img/casual_mb_img.png')} alt="#" className='browse_mob_img' />
                         </span>
 
                         <span>
                             <p className="browse_mob_heading m_secondary_heading">Formal</p>
-                            <img src={require('../../assets/img/formal_mb_img.png')} alt='#' className="browse_mob_img formal_img" />
+                            <img src={require('../../assets/img/formal_mb_img.png')} alt='#' className="browse_mob_img" />
                         </span>
 
                         <span>
                             <p className="browse_mob_heading m_secondary_heading">Party</p>
-                            <img src={require('../../assets/img/party_mb_img.png')} alt='#' className="browse_mob_img party_img" />
+                            <img src={require('../../assets/img/party_mb_img.png')} alt='#' className="browse_mob_img" />
                         </span>
 
                         <span>
                             <p className="browse_mob_heading m_secondary_heading">Gym</p>
-                            <img src={require('../../assets/img/gym_mb_img.png')} alt='#' className="browse_mob_img gym_img" />
+                            <img src={require('../../assets/img/gym_mb_img.png')} alt='#' className="browse_mob_img" />
                         </span>
                     </div>
                 </div>
