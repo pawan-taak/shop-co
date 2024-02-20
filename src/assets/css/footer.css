@@ -1,28 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.container {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-.section {
-    max-width: 1720px;
-    width: 100%;
-    padding: 0 100px;
-}
+ 
 
 .about_date {
     position: absolute;
@@ -36,7 +12,7 @@ a {
     width: 100%;
     padding: 36px 64px;
     justify-content: space-between;
-  
+
 }
 
 .last_sub_section {
@@ -66,7 +42,7 @@ a {
 .subscribe_btn {
     padding: 0 36px;
     max-width: 349px;
-    width:100%;
+    width: 100%;
     border-radius: 20px;
     padding: 10px;
 }
@@ -74,7 +50,7 @@ a {
 .mail {
     padding: 10px;
     max-width: 349px;
-    width:100%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -89,25 +65,26 @@ a {
 
 .footer_back_section {
     background: #F0F0F0;
-    
+
 }
 
- .footer_section {
-   
- 
+.footer_section {
+
+
     padding: 50px 0 0 0;
-  
+
     gap: 26px;
 
-    
-} 
+
+}
 
 .footer_nav_bar {
     display: flex;
     white-space: nowrap;
     gap: 100px;
 }
-.footer_info{
+
+.footer_info {
     display: flex;
     gap: 113px;
 }
@@ -136,13 +113,15 @@ a {
     flex-direction: column;
     gap: 10px;
 }
-.footer_payment_section{
+
+.footer_payment_section {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 
 }
-.footer_left{
+
+.footer_left {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -171,17 +150,18 @@ a {
         flex-direction: column;
         padding: 31.58px 0;
     }
-    .footer_info{
-display: flex;
-flex-direction: column;
+
+    .footer_info {
+        display: flex;
+        flex-direction: column;
     }
 
     /* .footer_nav_bar {
       /* display: flex;
       flex-direction: column; */
-      /* display: grid;
+    /* display: grid;
       grid-template-columns: auto auto;
-    } */ 
+    } */
 
     .about_date {
         display: flex;
@@ -190,9 +170,10 @@ flex-direction: column;
         width: 100%;
         padding: 0px 16px;
     }
-   .footer_main_heading{
-    padding-top: 50px;
-   }
 
- 
+    .footer_main_heading {
+        padding-top: 50px;
+    }
+
+
 }
