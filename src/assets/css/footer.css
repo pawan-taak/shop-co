@@ -160,7 +160,7 @@ a {
 
 
 
-@media(max-width: 567px) {
+@media(max-width: 375px) {
     .section {
         padding: 0 20px;
         margin: 0 auto
@@ -175,6 +175,10 @@ a {
 display: flex;
 flex-direction: column;
     }
+    .footer_nav_bar{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 
     /* .footer_nav_bar {
       /* display: flex;
@@ -186,13 +190,39 @@ flex-direction: column;
     .about_date {
         display: flex;
         flex-direction: column;
-        max-width: 358px;
+        max-width: 330px;
         width: 100%;
         padding: 0px 16px;
     }
    .footer_main_heading{
     padding-top: 50px;
    }
+   .footer_main_text{
+    font-size: 28.8px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+   .footer_social_section{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .footer_nav_bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+   }
+   .footer_payment_section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+   }
+   .footer_left{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   }
+
 
  
 }
