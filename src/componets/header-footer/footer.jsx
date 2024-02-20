@@ -47,7 +47,7 @@ function Footer() {
         <div className='section'>
           <div className="about_date">
             <div className='mail_section_right'>
-              <h1 className='footer_para'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+              <h1 className='footer_para h_heading'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
             </div>
             <div className='mail_section_left'>
               <input className='mail' placeholder='enter your email address'></input>
@@ -69,23 +69,26 @@ function Footer() {
             <div className='footer_info'>
             <div className='footer_right_upper_side'>
                   <h1>SHOP.CO</h1>
-                  <p className='footer_about'>
+                  <p className='footer_about '>
                     We have clothes that suit your style and which you’re proud to wear. From women to men.
                   </p>
+                  <div className='footer_social_section'>
                   <img src={require('../../assets/img/twitter.png')} alt="footer git" />
                   <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
                   <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
                   <img src={require('../../assets/img/git.png')} alt="footer git" />
+                  </div>
+                 
                 </div>
               <div className='footer_left_upper_side'>
                 <nav>
                   <div className="footer_nav_bar">
                     {footerSections.map((item, index) => (
                       <div key={index} className="footer_support">
-                        <h2>{item.title}</h2>
+                        <h2 className='h_sm_prime'>{item.title}</h2>
                         <div className="footer_nav_list">
                           {item.links.map((link, linkIndex) => (
-                            <a key={linkIndex} className="footer_effect" href={link.href}>
+                            <a key={linkIndex} className="footer_effect h_sm_heading" href={link.href}>
                               {link.text}
                             </a>
                           ))}
