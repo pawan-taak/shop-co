@@ -78,7 +78,6 @@ function Footer() {
                   <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
                   <img src={require('../../assets/img/git.png')} alt="footer git" />
                   </div>
-                 
                 </div>
               <div className='footer_left_upper_side'>
                 <nav>
