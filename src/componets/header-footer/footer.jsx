@@ -63,37 +63,53 @@ function Footer() {
       </div>
 
       <div className='container'>
-      <div className='footer_back_section'>
-        <div className='section'>
-          <div className="footer_section section">
-            <div className='footer_main_heading'>
-              <h1>SHOP.CO</h1>
-              <p className='footer_about'>
-                We have clothes that suit your style and which you’re proud to wear. From women to men.
-              </p>
-              <img src={require('../../assets/img/twitter.png')} alt="footer git" />
-              <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
-              <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
-              <img src={require('../../assets/img/git.png')} alt="footer git" />
-            </div>
-            <nav>
-              <div className="footer_nav_bar">
-                {footerSections.map((item, index) => (
-                  <div key={index} className="footer_support">
-                    <h2>{item.title}</h2>
-                    <div className="footer_nav_list">
-                      {item.links.map((link, linkIndex) => (
-                        <a key={linkIndex} className="footer_effect" href={link.href}>
-                          {link.text}
-                        </a>
-                      ))}
-                    </div>
+        <div className='footer_back_section'>
+          <div className='section'>
+            <div className="footer_section ">
+            <div className='footer_info'>
+            <div className='footer_right_upper_side'>
+                  <h1>SHOP.CO</h1>
+                  <p className='footer_about'>
+                    We have clothes that suit your style and which you’re proud to wear. From women to men.
+                  </p>
+                  <img src={require('../../assets/img/twitter.png')} alt="footer git" />
+                  <img src={require('../../assets/img/footer_fb.png')} alt="footer git" />
+                  <img src={require('../../assets/img/footer_insta.png')} alt="footer git" />
+                  <img src={require('../../assets/img/git.png')} alt="footer git" />
+                </div>
+              <div className='footer_left_upper_side'>
+                <nav>
+                  <div className="footer_nav_bar">
+                    {footerSections.map((item, index) => (
+                      <div key={index} className="footer_support">
+                        <h2>{item.title}</h2>
+                        <div className="footer_nav_list">
+                          {item.links.map((link, linkIndex) => (
+                            <a key={linkIndex} className="footer_effect" href={link.href}>
+                              {link.text}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </nav>
               </div>
-            </nav>
+            </div>
+            
+              <div className='footer_payment_section'>
+                <div className='footer_right'>
+                  <p>Shop.co © 2000-2023, All Rights Reserved</p>
+                </div>
+                <div className='footer_left'>
+                  <img src={require('../../assets/icon/visa.png')} alt="footer visa" />
+                  <img src={require('../../assets/icon/Mastercard.png')} alt="footer master" />
+                  <img src={require('../../assets/icon/Paypal.png')} alt="footer paypel" />
+                  <img src={require('../../assets/icon/gpay.png')} alt="footer gpay" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </>
