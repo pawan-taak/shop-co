@@ -1,6 +1,6 @@
 .browse_section {
     border-radius: 40px;
-    margin-top: 100px ;
+    margin-top: 100px;
     background: #F0F0F0;
     padding: 100px 0 100px 0;
     display: flex;
@@ -21,33 +21,69 @@
     padding: 36px 25px;
 }
 
-/* .party_img {
-    max-width: 684px;
-    width:100%;
-    
+
+.big_img {
+    max-width: 642px;
+    width: 100%;
+    height: 289px;
 }
 
-.gym_img {
-    max-width: 407px;
-    width:100%;
-    
-} */
+.small_img {
+    max-width: 354px;
+    width: 100%;
+    height: 289px;
+}
+
 
 .browse_card_section {
     display: flex;
     flex-wrap: wrap;
-   
     justify-content: center;
+    gap: 25px;
 }
 
-@media(max-width:567px){
+.browse_mob_section {
+    display: none;
+}
 
+
+@media(max-width:768px) {
+
+    .browse_section {
+        border-radius: 40px;
+        margin-top: 65px;
+        background: #F0F0F0;
+        padding: 80px 0 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
     
+    .big_img{
+        max-width:352px;
+        width: 100%;
+        height: 190px; 
+    }
 
-    .browse_img {
+}
+
+@media(max-width:425px) {
+
+    .browse_card_section {
+        display: none;
+    }
+
+    .browse_mob_section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .browse_mob_img {
         max-width: 310px;
-     width:100%;
-     height: 190px;
+        width: 100%;
+        height: 190px;
     }
 
     .browse_section {
@@ -58,5 +94,48 @@
         padding: 16px 24px;
     }
 
-    
+    .browse_mob_heading {
+        position: absolute;
+        z-index: 1;
+        padding: 16px 24px;
+    }
+}
+
+@media(max-width:375px) {
+
+    .browse_section {
+        margin-top: 50px;
+        padding: 40px 0 40px;
+    }
+
+    .browse_mob_img {
+        max-width: 250px;
+        width: 100%;
+        height: 150px;
+    }
+
+
+
+}
+
+@media(max-width:320px) {
+
+    .m_secondary_heading {
+        font-size: 20px;
+    }
+
+    .browse_mob_img {
+        max-width: 220px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .browse_section {
+        margin-top: 50px;
+        padding: 40px 0 40px;
+    }
+
+    .browse_mob_heading {
+        padding: 10px 20px;
+    }
 }

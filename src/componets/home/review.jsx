@@ -41,9 +41,9 @@ const Review = () => {
                             <Fragment key={index}>
                                 <div className='review_section'>
                                     <img src={require('../../assets/img/star.png')} alt='#'></img>
-                                    <h2>{item?.name}
+                                    <h2 className='review_text_bar xxl_heading'>{item?.name}
                                         <img src={require('../../assets/img/verified_logo.png')} alt='#'></img></h2>
-                                    <p className='info_review'>{item?.info}</p>
+                                    <p className='info_review h_sm_heading'>{item?.info}</p>
                                 </div>
                             </Fragment>
                         )
