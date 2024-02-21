@@ -10,7 +10,6 @@
      width: 100%;
      padding: 36px 64px;
      justify-content: space-between;
-
  }
 
  .last_sub_section {
@@ -274,3 +273,106 @@
 
      }
  }
+
+ @media(max-width:375px){    
+
+    .about_date {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        max-width: 330px;
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer_nav_bar {
+        display: flex;      
+        gap: 81px;
+        flex-wrap: wrap;
+       
+    }
+
+    .footer_payment_section {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+    @media(max-width:425px){
+     .about_date{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        max-width: 375px; 
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: space-between;
+        flex-direction: column;
+     }
+
+     .footer_nav_bar {
+        display: flex;      
+        gap: 81px;
+        flex-wrap: wrap;
+       
+    }
+
+    .footer_payment_section{
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    
+    }
+@media(max-width:1024px){
+    .about_date{
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: black;
+        max-width: 880px; 
+        width: 100%;
+        padding: 0px 10px;
+        justify-content: space-between;
+        flex-direction: column;   
+    }
+    .footer_info{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .footer_social_section{
+        display: flex;
+        gap: 50px;
+    }
+    .footer_nav_bar {
+        display: flex;      
+        gap: 81px;
+        flex-wrap: wrap;
+       
+    }
+    .footer_payment_section{
+        align-items: center;
+        padding: 40px 0;
+    }
+}
+ 
