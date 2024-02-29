@@ -1,16 +1,80 @@
-.shirts_scetion{
+.shirts_scetion {
     display: flex;
     gap: 20px;
-    
+    justify-content: center;
 }
-.arrivals_heading{
+
+.arrivals_heading {
     display: flex;
     justify-content: center;
     padding: 72px 55px;
 }
-@media(max-width: 567px){
-    .shirts_scetion{
-     display: flex;
-     flex-direction: column;
+
+.shirts_scetion img {
+    border-radius: 20px;
+}
+
+
+@media(max-width:768px){   
+
+    .arrivals_heading{
+        padding: 50px 55px;
     }
+    .shirts_scetion {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+    }
+    
+}
+
+@media(max-width: 425px) {
+    .shirts_scetion {
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+    }
+}
+
+@media(max-width:375px) {
+    .m_primary_heading {
+        font-size: 30px;
+    }
+
+    .arrivals_heading {
+        display: flex;
+        justify-content: center;
+        padding: 25px 50px;
+    }
+
+    .common_card_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrivals_heading{
+        padding: 30px 55px;
+    }
+
+
+}
+
+@media(max-width:320px) {
+    .m_primary_heading {
+        font-size: 25px;
+    }
+
+    .arrivals_heading {
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .common_card_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

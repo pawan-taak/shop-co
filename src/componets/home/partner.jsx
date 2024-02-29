@@ -30,7 +30,7 @@ const Partner = () => {
           {
             partners.map((item, index) => {
               return (
-                <img src={require(`../../assets/img/${item?.img}`)} />
+                <img key={index} src={require(`../../assets/img/${item?.img}`)} alt='#' />
               )
             })
           }

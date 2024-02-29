@@ -1,4 +1,4 @@
-@media(max-width:567px) {
+@media(max-width:425px) {
     .header_menu_item {
         display: none;
     }
@@ -7,14 +7,16 @@
         position: absolute;
         width: 200px;
         height: 100%;
-        background: #151719;
+        background: #3f84ca;
         left: -200px;
         transition: all 500ms linear;
-
+        z-index: 7;
+        top: 34px;
     }
 
     .sidebar.active {
         left: 0px;
+
     }
 
     .menu_bar li {
@@ -23,12 +25,43 @@
         padding: 15px 10px;
         border-bottom: 1px solid rgba(100, 100, 100, 0.3);
         text-align: center;
+
     }
 
 
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
 
+    .sidebar-overlay.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
 
+    }
 
+.mob_close_toggle{
+    text-align: right;
+    margin: 0 10px 0 0;
+}
 
+.mob_close_toggle button{
+    padding: 0 10px;
+    background-color: #3f84ca;
+    border: 1px solid black;
+}
+ 
+.mob_close_toggle button:hover{
+    background-color: black;
+    color: white;
+}
 
 }

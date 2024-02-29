@@ -16,15 +16,11 @@ const filterData=()=>{
 }
 
     return(
-        <div className="card">
-        {
-            data?.img !==undefined &&
-            <img src={require(`../assets/img/category_images/${data?.img}`)}></img>
-        }
-        <p className="card_name">{data?.title}</p>
-        <p className="info">${data?.stars}</p>
-        <p className="info">${data?.price}</p>
-        
+        <div className='common_card_section'>
+        <img src={require(`../assets/img/${data.img}`)} alt='#'/>
+        <h2 className='card_title m_md_heading'>{data?.title}</h2>
+        <img src={require('../assets/img/star.png')} alt='#' />
+        <p className='m_lg_heading'>{data?.price}</p>
         </div>
     )
 }
