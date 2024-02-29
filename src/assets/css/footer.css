@@ -74,7 +74,7 @@
  .footer_nav_bar {
      display: flex;
      white-space: nowrap;
-     gap: 100px;
+     gap: 65px;
  }
 
  .footer_info {
@@ -150,13 +150,13 @@
      }
 
 
-     .about_date {
+     /* .about_date {
          display: flex;
          flex-direction: column;
          max-width: 358px;
          width: 100%;
          padding: 0px 16px;
-     }
+     } */
 
      .footer_main_heading {
          padding-top: 50px;
@@ -197,11 +197,6 @@
          flex-direction: column;
      }
 
-     .footer_nav_bar {
-         display: flex;
-         white-space: nowrap;
-         gap: 50px;
-     }
 
      .footer_payment_section {
          display: flex;
@@ -220,61 +215,10 @@
          flex-direction: column;
      }
 
-     .footer_nav_bar {
-         display: grid;
-         grid-template-columns: auto auto;
-     }
+   
 
  }
-
- /* .about_date {
-        display: flex;
-        flex-direction: column;
-        max-width: 330px;
-        width: 100%;
-        padding: 0px 16px;
-    } */
- /* .footer_main_heading{
-    padding-top: 50px;
-   }
-   .footer_main_text{
-    font-size: 28.8px;
-    font-weight: 700;
-    padding-top: 100px;
-}
-   .footer_social_section{
-    display: flex;
-    justify-content: space-evenly;
-   }
-   .footer_nav_bar{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-   }
-   .footer_payment_section{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-   }
-   .footer_left{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-   } */
-
-
-
- /* @media(max-width: 320px) {
-     .h_heading {
-         font-size: 20px;
-     } */
-
-     .footer_nav_bar {
-         display: grid;
-         grid-template-columns: auto auto;
-         gap: 40px;
-     }
+    
 
      .footer_info {
          display: flex;
@@ -289,14 +233,7 @@
          max-width: 349px;
          width: 100%;
      }
-
-     .about_date {
-         display: flex;
-         flex-direction: column;
-         max-width: 280px;
-         width: 100%;
-         padding: 0px 10px;
-     }
+     
 
      .footer_para {
          padding: 15px 20px;
@@ -313,9 +250,9 @@
 
      .footer_payment_section {
          display: flex;
-         flex-direction: column;
+      
          align-items: center;
-         gap: 15px;
+      
          text-align: center;
 
      }
