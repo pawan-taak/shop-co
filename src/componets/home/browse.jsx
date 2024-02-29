@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../assets/css/browse.css'
 
 const Browse = () => {
   return (

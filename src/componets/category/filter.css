@@ -1,9 +1,20 @@
-.filter{
+.start_heading{
+    display: flex;
+    gap: 12px;
+    padding: 24px;
+}
+
+
+
+
+.filter {
+    height: 1270px;
     max-width: 295px;
     width: 100%;
     border: 1px solid #0000001a;
     border-radius: 20px;
     padding: 20px 24px;
+    
 }
 
 .divider {
@@ -14,7 +25,7 @@
     margin: 24px 0px;
 }
 
-.colorContainer{
+.colorContainer {
     display: flex;
     gap: 20px;
 }
@@ -41,24 +52,90 @@
 .color {
     display: flex;
 }
-.btnSize{
+
+.btnSize {
     border-radius: 62px;
     padding: 10px 20px;
     background-color: #F0F0F0;
+
 }
-.Button{
-    display:grid;
+
+.Button {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.list{
+.list {
     display: flex;
-    gap:20px;
+    gap: 20px;
     flex-wrap: wrap;
 
 }
-.products_name{
+
+.products_name {
     display: block;
     width: 100%;
+}
+
+.category_page {
+    display: flex;
+    gap: 20px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px 20px;
+}
+
+.casual_product {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.product_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Ryt_product_title {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.product_icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product_btn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.filter_pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+.pagination_box {
+    width: Fixed (40px);
+    height: Fixed (40px);
+    padding: 12px;
+    border-radius: 8px;
+
 }

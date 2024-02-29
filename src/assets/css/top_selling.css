@@ -1,0 +1,15 @@
+.selling_section{
+    display: flex;
+        gap: 20px;
+}
+.top_selling_section{
+    display: flex;
+    justify-content: center;
+    padding: 66px 55px;
+}
+@media(max-width: 567px){
+    .selling_section{
+        display: flex;
+        flex-direction: column;
+    }
+}

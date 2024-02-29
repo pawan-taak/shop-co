@@ -1,0 +1,16 @@
+.shirts_scetion{
+    display: flex;
+    gap: 20px;
+    
+}
+.arrivals_heading{
+    display: flex;
+    justify-content: center;
+    padding: 72px 55px;
+}
+@media(max-width: 567px){
+    .shirts_scetion{
+     display: flex;
+     flex-direction: column;
+    }
+}
