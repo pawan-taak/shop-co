@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import '../../assets/css/review.css'
+import CardReview from '../../snippets/card_review';
 // import Card from '../../snippets/card'
 
 const Review = () => {
@@ -38,13 +39,14 @@ const Review = () => {
                 {
                     arrivals.map((item, index) => {
                         return (
-                            <Fragment key={index}>
-                                <div className='review_section'>
+                            <Fragment>
+                                {/* <div className='review_section'>
                                     <img src={require('../../assets/img/star.png')} alt='#'></img>
                                     <h2 className='review_text_bar xxl_heading'>{item?.name}
                                         <img src={require('../../assets/img/verified_logo.png')} alt='#'></img></h2>
                                     <p className='info_review h_sm_heading'>{item?.info}</p>
-                                </div>
+                                </div> */}
+                                <CardReview key={index + new Date()} arrivals={item} />
                             </Fragment>
                         )
                     })

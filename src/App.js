@@ -5,7 +5,6 @@ import Home from './pages/home';
 import Products from './pages/products';  
 import Footer from './componets/header-footer/footer';
 import Category from './pages/category';
-import ProductDetails from './componets/product-detail/product-detail';
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
     <Route path='/category' element={<Category/>}/>
   </Routes>
   <Footer/>
-  <ProductDetails />
   </BrowserRouter>
   </>
   );
