@@ -1,0 +1,15 @@
+.like_section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.top_like_section {
+    display: flex;
+    justify-content: center;
+    padding: 66px 55px;
+}
+
+.like_section img {
+    border-radius: 20px;
+}

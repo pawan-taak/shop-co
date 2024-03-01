@@ -5,6 +5,8 @@ import Home from './pages/home';
 import Products from './pages/products';
 import Footer from './componets/header-footer/footer';
 import Category from './pages/category';
+import ProductReview from './componets/product-detail/product_review';
+import LikeSection from './componets/product-detail/product_like_section';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
     <Route path='/category' element={<Category/>}/>
   </Routes>
   <Footer/>
+  <ProductReview/>
+  <LikeSection/>
   </BrowserRouter>
   </>
   );
