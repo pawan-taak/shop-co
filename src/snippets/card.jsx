@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import '../assets/css/card.css'
 
 const Card = ({ data, filters }) => {
     let [filteredData, setFilteredData] = useState(data)
-    // useEffect = (() => {
+    // useEffect(() => {
 
     //     filterData()
     // }, [])
