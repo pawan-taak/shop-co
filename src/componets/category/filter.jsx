@@ -3,10 +3,13 @@ import '../category/filter.css'
 import Card from "../../snippets/card"
 import arrow_right from "../../assets/icon/arrow_left.png"
 import arrow_left from "../../assets/icon/arrow_right.png"
+import { json } from 'react-router-dom'
 
 const Filter = () => {
     let [counter, setCounter] = useState(0)
     const [filter, setFilter] = useState([])
+
+
 
     let filterData = [{
         title: "",
@@ -80,6 +83,52 @@ const Filter = () => {
     //         title: "LOOSE FIT BERMUDA SHORTS",
     //         price: "80"
     //     },
+    // let imgData = [
+    //     {
+    //         img: "T-shirt(1).png",
+    //         title: "Gradient Graphic T-shirt",
+    //         price: "145"
+    //     },
+    //     {
+    //         img: "second.png",
+    //         title: "Polo with Tipping Details",
+    //         price: "180"
+    //     },
+    //     {
+    //         img: "third.png",
+    //         title: "Black Striped T-shirt",
+    //         price: "120"
+    //     },
+    //     {
+    //         img: "Fourth.png",
+    //         title: "SKINNY FIT JEANS",
+    //         price: "240"
+    //     },
+    //     {
+    //         img: "fifth.png",
+    //         title: "CHECKERED SHIRT",
+    //         price: "180"
+    //     },
+    //     {
+    //         img: "sixth.png",
+    //         title: "SLEEVE STRIPED T-SHIRT",
+    //         price: "130"
+    //     },
+    //     {
+    //         img: "seventh.png",
+    //         title: "VERTICAL STRIPED SHIRT",
+    //         price: "212"
+    //     },
+    //     {
+    //         img: "eight.png",
+    //         title: "COURAGE GRAPHIC T-SHIRT",
+    //         price: "145"
+    //     },
+    //     {
+    //         img: "nine.png",
+    //         title: "LOOSE FIT BERMUDA SHORTS",
+    //         price: "80"
+    //     },
 
 
 
@@ -97,6 +146,7 @@ const Filter = () => {
           
           fetchData();
         }, []);
+        
         async function fetchData() {
             var data = await fetch('https://fakestoreapi.com/products').then(res => {return res.json();
             });
@@ -107,12 +157,11 @@ const Filter = () => {
 
     return (
         <>
-    
             <div className='section'>
-            <div className='start_heading'>
-                <h4>Home</h4>
-                <h4>Casual</h4>
-            </div>
+                <div className='start_heading'>
+                    <h4>Home</h4>
+                    <h4>Casual</h4>
+                </div>
                 <div className='category_page'>
                     <div className='filter' >
                         <p className='titleSpace'>Filter</p>
@@ -157,7 +206,6 @@ const Filter = () => {
                                 )
                             })
                         }
-
                     </div>
                     <div className='product'>
                         <div className='product_title'>
@@ -173,7 +221,6 @@ const Filter = () => {
                                 items.map((item, index) => {
                                     return (
                                         <Card data={item} filters={filter} />
-
                                     )
                                 })
                             }
@@ -183,31 +230,26 @@ const Filter = () => {
                                 <img src={arrow_left} alt='error' />
                                 <h3 >Previous</h3>
                             </div>
-
                             <div>
                                 <ul className='filter_pagination'>
                                     <li className='pagination_box'>1</li>
                                     <li className='pagination_box'>2</li>
-                                    <li  className='pagination_box'>3</li>
-                                    <li  className='pagination_box'>-</li>
-                                    <li  className='pagination_box'>8</li>
-                                    <li  className='pagination_box'>9</li>
-                                    <li  className='pagination_box'>10</li>
+                                    <li className='pagination_box'>3</li>
+                                    <li className='pagination_box'>-</li>
+                                    <li className='pagination_box'>8</li>
+                                    <li className='pagination_box'>9</li>
+                                    <li className='pagination_box'>10</li>
                                 </ul>
                             </div>
-
                             <div className='product_icon'>
                                 <h3 >Next </h3>
                                 <img src={arrow_right} alt='error' />
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </>
     )
-
-
 }
 export default Filter;

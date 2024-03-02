@@ -4,6 +4,7 @@ import '../assets/css/card.css'
 const Card = ({ data, filters }) => {
     let [filteredData, setFilteredData] = useState(data)
     // useEffect(() => {
+    // useEffect = (() => {
 
     //     filterData()
     // }, [])
@@ -23,6 +24,7 @@ const Card = ({ data, filters }) => {
                 <img src={require(`../assets/img/${data?.img}`)} alt='#' className='all_image_bar'/>
 
             }
+            {/* <img src={require(`../assets/img/${data.img}`)} alt='#' /> */}
             <h2 className='card_title m_md_heading'>{data?.title}</h2>
             <img src={require('../assets/img/star.png')} alt='#' />
             <p className='m_lg_heading'>${data?.price}</p>

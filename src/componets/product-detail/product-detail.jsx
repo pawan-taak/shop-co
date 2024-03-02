@@ -37,18 +37,21 @@ function ProductDetails() {
                                 <hr />
                                 <div className="colors_choice">
                                     <h2> Select Colors</h2>
-                                    <div>
-                                        <img src={require('../../assets/img/colors.png')} alt="colors" />
+                                    <div className="chhose_color">
+                                        <button className="color-btn1" ></button>
+                                        <button className="color-btn2"></button>
+                                        <button className="color-btn3"></button>
+                                    
                                     </div>
                                 </div>
                                 <hr />
                                 <div className="size_choice">
                                     <h2>choose size</h2>
                                     <div className="various_size">
-                                        <div className="small">Small </div>
-                                        <div className="medium"> Medium</div>
-                                        <div className="large">Large </div>
-                                        <div className="x-large">X-Large </div>
+                                        <div className="small size">Small </div>
+                                        <div className="medium size"> Medium</div>
+                                        <div className="large size">Large </div>
+                                        <div className="x-large size">X-Large </div>
                                     </div>
                                 </div>
                                 <div className="cart-section">
