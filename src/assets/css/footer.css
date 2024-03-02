@@ -1,6 +1,4 @@
- .about_date {
-     position: absolute;
-     z-index: 1;
+ .about_date {     
      display: flex;
      align-items: center;
      border: 2px solid black;
@@ -66,8 +64,7 @@
  }
 
  .footer_section {
-     padding: 50px 0 0 0;
-     gap: 26px;
+     padding: 50px 0 0 0
  }
 
  .footer_nav_bar {
@@ -235,9 +232,7 @@
          padding: 15px 20px;
      }
 
-     .footer_section {
-         padding: 10px 0;
-     }
+     
 
      .footer_social_section {
          display: flex;

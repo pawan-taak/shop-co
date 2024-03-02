@@ -153,8 +153,9 @@
   }
   
   .cart_add {
-    width: 400px;
-    height: 52px;
+    max-width: 400px;
+    width: 100%;
+    
     background-color: black;
     color: white;
     border-radius: 62px;

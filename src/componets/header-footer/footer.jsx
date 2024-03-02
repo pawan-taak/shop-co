@@ -58,10 +58,7 @@ function Footer() {
       </div>
 
  
-      <div className="last_sub_section">
-        <div className="last_white_section"></div>
-        <div className="last_black_section"></div>
-      </div>
+      
 
       <div className='container'>
         <div className='footer_back_section'>
