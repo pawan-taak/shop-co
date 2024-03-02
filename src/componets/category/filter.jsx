@@ -34,62 +34,76 @@ const Filter = () => {
             ["Casual", "Party", "Formal", "Gym"]
     }];
 
-    let imgData = [
-        {
-            img: "T-shirt(1).png",
-            title: "Gradient Graphic T-shirt",
-            price: "145"
-        },
-        {
-            img: "second.png",
-            title: "Polo with Tipping Details",
-            price: "180"
-        },
-        {
-            img: "third.png",
-            title: "Black Striped T-shirt",
-            price: "120"
-        },
-        {
-            img: "Fourth.png",
-            title: "SKINNY FIT JEANS",
-            price: "240"
-        },
-        {
-            img: "fifth.png",
-            title: "CHECKERED SHIRT",
-            price: "180"
-        },
-        {
-            img: "sixth.png",
-            title: "SLEEVE STRIPED T-SHIRT",
-            price: "130"
-        },
-        {
-            img: "seventh.png",
-            title: "VERTICAL STRIPED SHIRT",
-            price: "212"
-        },
-        {
-            img: "eight.png",
-            title: "COURAGE GRAPHIC T-SHIRT",
-            price: "145"
-        },
-        {
-            img: "nine.png",
-            title: "LOOSE FIT BERMUDA SHORTS",
-            price: "80"
-        },
+    // let imgData = [
+    //     {
+    //         img: "T-shirt(1).png",
+    //         title: "Gradient Graphic T-shirt",
+    //         price: "145"
+    //     },
+    //     {
+    //         img: "second.png",
+    //         title: "Polo with Tipping Details",
+    //         price: "180"
+    //     },
+    //     {
+    //         img: "third.png",
+    //         title: "Black Striped T-shirt",
+    //         price: "120"
+    //     },
+    //     {
+    //         img: "Fourth.png",
+    //         title: "SKINNY FIT JEANS",
+    //         price: "240"
+    //     },
+    //     {
+    //         img: "fifth.png",
+    //         title: "CHECKERED SHIRT",
+    //         price: "180"
+    //     },
+    //     {
+    //         img: "sixth.png",
+    //         title: "SLEEVE STRIPED T-SHIRT",
+    //         price: "130"
+    //     },
+    //     {
+    //         img: "seventh.png",
+    //         title: "VERTICAL STRIPED SHIRT",
+    //         price: "212"
+    //     },
+    //     {
+    //         img: "eight.png",
+    //         title: "COURAGE GRAPHIC T-SHIRT",
+    //         price: "145"
+    //     },
+    //     {
+    //         img: "nine.png",
+    //         title: "LOOSE FIT BERMUDA SHORTS",
+    //         price: "80"
+    //     },
 
 
 
-    ];
+    // ];
 
     // useEffect(()=>{
 
     //     console.log(filter,"filter");
 
     // },[filter])
+
+        const [items, setItems] = useState([]);
+      
+        useEffect(() => {
+          
+          fetchData();
+        }, []);
+        async function fetchData() {
+            var data = await fetch('https://fakestoreapi.com/products').then(res => {return res.json();
+            });
+            
+            setItems(data);
+            console.log(data);
+          }
 
     return (
         <>
@@ -155,8 +169,8 @@ const Filter = () => {
                         </div>
                         <div className="home">
                             {
-                                imgData.length > 0 &&
-                                imgData.map((item, index) => {
+                        items.length > 0 &&
+                                items.map((item, index) => {
                                     return (
                                         <Card data={item} filters={filter} />
 

@@ -13,11 +13,10 @@ function Header() {
     return (
         <>
             {/* top header section */}
-            <div className="container">
-                <div className="header_top_section">
+            <div className="header_top_section">
                     <p className="h_mm_heading">Sign up and get 20% off to your first order. <span className="sign_up">Sign Up Now</span></p>
                 </div>
-            </div>
+            
             {/* header menu bar section */}
 
             <div className="section">
