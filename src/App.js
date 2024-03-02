@@ -10,14 +10,15 @@ import Category from './pages/category';
 function App() {
   return (
   <>
-  <BrowserRouter >
-      <Header/>
-  <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/products' element={<Products/>}/>
-    <Route path='/category' element={<Category/>}/>
-  </Routes>
-  <Footer/>
+  <BrowserRouter>
+  <Header/>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path="/category" element={<Category/>}/>
+      <Route path='/products' element={<Products/>}/>
+      <Route path='/product-detail/:id' element ={<Products/>}/>
+    </Routes>
+    <Footer/>
   </BrowserRouter>
   </>
   );
