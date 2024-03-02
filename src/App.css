@@ -3,8 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
+ 
+.all_image_bar{
+  width: 100px;
+  height: 100px
+}
 a {
   text-decoration: none;
   color: black;

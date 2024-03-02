@@ -5,7 +5,7 @@ import '../../assets/css/arrivals.css'
 const Arrival = () => {
     const data = [
         {
-            img: 'tshirt_tape.png',
+            image: 'tshirt_tape.png',
             title: 'T-SHIRT WITH TAPE DETAILS',
             stars: 5,
             price: '$120',
