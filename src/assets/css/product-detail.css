@@ -145,11 +145,11 @@
     height: 52px;
     background-color: grey;
     border-radius: 62px;
-    font-size: 16px;
     align-items: center;
     text-align: center;
     padding: 10px 0;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
   }
   
   .cart_add {
@@ -165,3 +165,29 @@
     gap: 15px;
   }
    
+  .color-btn1{
+    width: 37px;
+    height: 37px;
+    border-radius:50% ;
+    background-color:  #4F4631;
+   }
+   .color-btn2{
+    width: 37px;
+    height: 37px;
+    border-radius:50% ;
+    background-color:  #314F4A; 
+   }
+   .color-btn3{
+    width: 37px;
+    height: 37px;
+    border-radius:50% ;
+    background-color:#31344F;
+   }
+   .chhose_color{
+    display: flex;
+    gap: 16px;
+   }
+
+   .size{
+    padding: 10px 0;
+   }
