@@ -5,7 +5,7 @@ import Home from './pages/home';
 import Products from './pages/products';  
 import Footer from './componets/header-footer/footer';
 import Category from './pages/category';
-
+import YourCart from './componets/cart_section/cart_section';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <Route path='/products' element={<Products/>}/>
       <Route path='/product-detail/:id' element ={<Products/>}/>
     </Routes>
+    <YourCart/>
     <Footer/>
   </BrowserRouter>
   </>
