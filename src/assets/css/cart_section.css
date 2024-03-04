@@ -1,0 +1,119 @@
+.right-section {
+    width: 505px;
+    height: Fixed (458px);
+    top: 276px;
+    left: 835px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    gap: 24px;
+    padding: 24px;
+
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.cart_btn_bar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+     align-items: end;
+}
+
+.cart_text_section {
+    display: flex;
+    gap: 15px;
+    max-width: 594px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 505px;
+    height: Fixed (458px);
+    top: 276px;
+    left: 835px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    gap: 24px;
+
+}
+
+.price-discount {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-discount {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.promo-section {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 12px;
+    padding: 24px 24px;
+}
+
+.promo-offer {
+    max-width: 326px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    border-style: double;
+    background: grey;
+}
+
+.apply-section {
+    background-color: black;
+    color: white;
+    /* max-width: 119px;
+    width: 100%; */
+    border-radius: 62px;
+    padding: 12px 16px 12px 16px;
+}
+
+.ceheckout-section {
+    background-color: black;
+    color: white;
+    padding: 19px 153px;
+    text-align: center;
+    border-radius: 60px;
+}
+
+.checkout-section {
+    padding: 20px 30px;
+}
+
+.cart-section-shirt{
+    display: flex;
+    width: 126px;
+    height: 44px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 62px;
+    gap: 20px;
+    background: #999986;
+    justify-content: center;
+}
+.btn_cart{
+    border: none;
+    background-color:#999986;;
+}
+.cart_img{
+    max-width: 24px;
+    width: 100%;
+    max-height: 24px;
+    height: 100%;
+}
+.about_discount_text{
+    color: red;
+}
