@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import '../../assets/css/product-detail.css'
+import { Link } from "react-router-dom";
 function ProductDetails() {
     return (
         <Fragment>
@@ -56,7 +57,8 @@ function ProductDetails() {
                                 </div>
                                 <div className="cart-section">
                                     <div className="contity">1 + 2</div>
-                                    <button className="cart_add">Add to Cart</button>
+                                
+                                    <Link to='/cart_section' className="cart_add">add to cart</Link>
                                 </div>
                             </div>
                         </div>

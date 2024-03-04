@@ -155,7 +155,9 @@
   .cart_add {
     max-width: 400px;
     width: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     color: white;
     border-radius: 62px;

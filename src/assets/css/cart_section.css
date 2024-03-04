@@ -1,13 +1,12 @@
 .right-section {
-    width: 505px;
-    height: Fixed (458px);
-    top: 276px;
-    left: 835px;
-    padding: 20px 24px 20px 24px;
+    max-width: 505px;
+    width: 100%;
     border-radius: 20px;
     border: 1px solid grey;
     gap: 24px;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -22,7 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-     align-items: end;
+    align-items: end;
 }
 
 .cart_text_section {
@@ -33,11 +32,10 @@
     justify-content: space-between;
 }
 
-.left-section {
-    width: 505px;
-    height: Fixed (458px);
-    top: 276px;
-    left: 835px;
+.left-section {   
+   
+    display: flex;
+    flex-direction: column;
     padding: 20px 24px 20px 24px;
     border-radius: 20px;
     border: 1px solid grey;
@@ -54,7 +52,7 @@
 .about-discount {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    
 }
 
 .promo-section {
@@ -94,7 +92,7 @@
     padding: 20px 30px;
 }
 
-.cart-section-shirt{
+.cart-section-shirt {
     display: flex;
     width: 126px;
     height: 44px;
@@ -104,16 +102,20 @@
     background: #999986;
     justify-content: center;
 }
-.btn_cart{
+
+.btn_cart {
     border: none;
-    background-color:#999986;;
+    background-color: #999986;
+    ;
 }
-.cart_img{
+
+.cart_img {
     max-width: 24px;
     width: 100%;
     max-height: 24px;
     height: 100%;
 }
-.about_discount_text{
+
+.about_discount_text {
     color: red;
 }

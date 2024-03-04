@@ -8,7 +8,7 @@ function YourCart() {
       
         {
             title: 'Gradient Graphic T-shirt',
-            img: 'cartshirt.png',
+            img: 'black_strip.png',
             size: 'Large',
             color: 'White',
             price: "$145",
@@ -35,12 +35,12 @@ function YourCart() {
         <>
             <div className="container">
                 <div className="section">
-                    <h2>Your cart</h2>
+                    <h2 className="m_primary_heading">Your cart</h2>
                     <div className="cart-section">
                         <div className="right-section">
                             {Cart.map((item, index) => (
                                 <div key={index} className="cart-item">
-                                    {/* <img src={require('../../assets/img')} /> */}
+                                    <img src={require('../../assets/img/cartshirt.png')} />
                                     <div className="cart_text_section">
                                         <div className="cart_text_bar">
                                             <h2>{item.title}</h2>
@@ -49,7 +49,7 @@ function YourCart() {
                                             <p>{item.price}</p>
                                         </div>
                                         <div className="cart_btn_bar">
-                                            {/* <img src={require('../../assets/img')}/> */}
+                                            <img src={require('../../assets/img/Frame.png')}/>
                                             <div className="cart-section-shirt">
                                             <button onClick={()=>setcounter(counter+1)} className="btn_cart">+</button>
                                             <p>{counter}</p>
@@ -76,6 +76,7 @@ function YourCart() {
                                     <li>Delivery</li>
                                     <li>$15</li>
                                 </ul>
+                                <hr/>
                                 <ul className="about-discount">
                                     <li>Total</li>
                                     <li>$467</li>
