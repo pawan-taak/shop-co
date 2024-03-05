@@ -80,7 +80,7 @@
 
 .category_page {
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .home {
@@ -118,6 +118,11 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
 }
 
 .product_btn {

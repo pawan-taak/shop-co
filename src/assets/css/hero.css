@@ -4,8 +4,8 @@
 
 .hero_section {
     display: flex;
-    padding: 151px 0;
-   
+    padding: 100px 0;
+   justify-content: space-between;
 }
 
 .hero_text_section {

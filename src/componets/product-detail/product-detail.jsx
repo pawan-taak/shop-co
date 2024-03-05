@@ -1,7 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect,useState,useParams} from "react";
 import '../../assets/css/product-detail.css'
 import { Link } from "react-router-dom";
-function ProductDetails() {
+
+
+const ProductDetails=()=>{
+
+    
+     const [productData, setProductData] = useState([]) 
+  
+   
+     const fetchProductData = async () => {
+      const data =await fetch('https://fakestoreapi.com/products/1')
+         .then(res => {return res.json()})
+         .then(json => console.log(json))
+         setProductData(data)
+     }
+     console.log(productData);
+
+//    useEffect(() => {
+//        fetchProductData();
+      
+//      }, []);
+
     return (
         <Fragment>
             <div className="container">
@@ -62,6 +82,19 @@ function ProductDetails() {
                                 </div>
                             </div>
                         </div>
+
+                           {
+                            productData.map((item)=>{
+                                <>
+                                <h2>{item.title}</h2></>
+                                return(
+                                    <div>
+                                        {item.title}
+                                    </div>
+                                )
+                            })
+                           }
+
                     </div>
                 </div>
             </div>

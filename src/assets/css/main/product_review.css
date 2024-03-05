@@ -42,7 +42,7 @@
     gap: 10px;
 }
 
-.product_review_button {
+.product_review_button{
     width: 120px;
 
     padding: 16px 20px 16px 20px;
@@ -67,4 +67,40 @@
 .rating_product_icon {
     display: flex;
     gap: 5px;
+}
+
+@media(max-width:768px){
+
+}
+
+@media(max-width:425px){
+    .rating_review_heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .rating_product_icon{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .product_review_button{
+        max-width: 166px;
+        width: 100%;
+    }
+    .rating_review{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:375px){
+    
+}
+
+@media(max-width:320px){
+    
 }

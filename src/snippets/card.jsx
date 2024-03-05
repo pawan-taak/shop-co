@@ -11,7 +11,7 @@ const Card = ({ data, filters }) => {
 
     return (
         <Link to={`/product-detail/${data?.id}`} className='common_card_section'>
-            <img src={data?.image} alt='#' className ="product_name"/>
+            <img src={data.image} alt='#' className ="product_name"/>
             <h2 className='card_title m_md_heading'>{data?.title}</h2>
             <img src={require('../assets/img/star.png')} alt='#' />
             <p className='m_lg_heading'>${data?.price}</p>

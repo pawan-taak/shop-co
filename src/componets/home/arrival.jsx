@@ -11,19 +11,19 @@ const Arrival = () => {
             price: '$120',
         },
         {
-            img: 'skinny_fitjeans.png',
+            image: 'skinny_fitjeans.png',
             title: 'SKINNY FIT JEANS',
             stars: 5,
             price: '$240',
         },
         {
-            img: 'cheaked_shirt.png',
+            image: 'cheaked_shirt.png',
             title: 'CHECKERED SHIRT',
             stars: 5,
             price: '$180',
         },
         {
-            img: 'sleeve_shirt.png',
+            image: 'sleeve_shirt.png',
             title: 'SLEEVE STRIPED T-SHIRT',
             stars: 5,
             price: '$130',
