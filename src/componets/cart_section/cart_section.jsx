@@ -37,7 +37,7 @@ function YourCart() {
                 <div className="section">
                     <h2 className="m_primary_heading">Your cart</h2>
                     <div className="cart-section">
-                        <div className="right-section">
+                        <div className="right-section mb-section ">
                             {Cart.map((item, index) => (
                                 <div key={index} className="cart-item">
                                     <img src={require('../../assets/img/cartshirt.png')} />
@@ -61,7 +61,7 @@ function YourCart() {
                                 </div>
                             ))}
                         </div>
-                        <div className="left-section">
+                        <div className="left-section mb-section" >
                             <h1>Order Summary</h1>
                             <div className="price-discount">
                                 <ul className="about-discount">

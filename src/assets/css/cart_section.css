@@ -1,6 +1,6 @@
 .right-section {
-    max-width: 505px;
-    width: 100%;
+    /* max-width: 505px;
+    width: 100%; */
     border-radius: 20px;
     border: 1px solid grey;
     gap: 24px;
@@ -32,8 +32,8 @@
     justify-content: space-between;
 }
 
-.left-section {   
-   
+.left-section {
+
     display: flex;
     flex-direction: column;
     padding: 20px 24px 20px 24px;
@@ -52,7 +52,7 @@
 .about-discount {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .promo-section {
@@ -94,8 +94,8 @@
 
 .cart-section-shirt {
     display: flex;
-    width: 126px;
-    height: 44px;
+    max-width: 125px;
+    width: 100%;
     padding: 12px 20px 12px 20px;
     border-radius: 62px;
     gap: 20px;
@@ -119,3 +119,61 @@
 .about_discount_text {
     color: red;
 }
+
+@media(max-width: 425px) {
+    .cart-section {
+        display: flex;
+        flex-direction: column;
+
+        }
+        
+        .cart-section-shirt {
+            max-width: 72px;
+            width: 100%;
+    }
+    .checkout-section{
+        width: 100%;
+        max-width: 335px;
+        justify-content: center;
+        display: flex;
+    }
+}
+@media(max-width: 1440px) {
+    .mb-section{
+       max-width: 600px;
+       width: 100%;
+    }
+
+   }
+   @media(max-width: 2560px){
+.mb-section{
+    max-width: 800px;
+    width: 100%;
+}
+   }
+   @media(max-width: 768px){
+    .cart-section {
+        display: flex;
+        flex-direction: column;
+
+        }
+        .checkout-section{
+            display: contents;
+        }
+        .apply-section{
+            max-width: 140px;
+            width: 100%;
+        }
+        
+        
+   }
+   /* @media(max-width: 375px){
+.right-section{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+}
+
+   } */
+   
