@@ -3,7 +3,7 @@ import '../assets/css/review.css'
 
 const CardReview = ({arrivals, filters }) => {
     let [rating, setRating] = useState(arrivals)
-    useEffect = (() => {
+    useEffect(() => {
 
         filterData()
     }, [])
@@ -16,6 +16,7 @@ const CardReview = ({arrivals, filters }) => {
 
     return (
         <div className='review_section product_review'>
+            
             <img src={require('../assets/img/star.png')} alt='#'/>
             <h2 className='review_text_bar xxl_heading'>{arrivals?.name}
                 <img src={require('../assets/img/verified_logo.png')} alt='#'></img></h2>

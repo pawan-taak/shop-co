@@ -8,25 +8,25 @@ const Arrival = () => {
             image: 'tshirt_tape.png',
             title: 'T-SHIRT WITH TAPE DETAILS',
             stars: 5,
-            price: '$120',
+            price: '120',
         },
         {
             image: 'skinny_fitjeans.png',
             title: 'SKINNY FIT JEANS',
             stars: 5,
-            price: '$240',
+            price: '240',
         },
         {
             image: 'cheaked_shirt.png',
             title: 'CHECKERED SHIRT',
             stars: 5,
-            price: '$180',
+            price: '180',
         },
         {
             image: 'sleeve_shirt.png',
             title: 'SLEEVE STRIPED T-SHIRT',
             stars: 5,
-            price: '$130',
+            price: '130',
         },
     ];
     return (

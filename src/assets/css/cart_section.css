@@ -125,49 +125,56 @@
         display: flex;
         flex-direction: column;
 
-        }
-        
-        .cart-section-shirt {
-            max-width: 72px;
-            width: 100%;
     }
-    .checkout-section{
+
+    .cart-section-shirt {
+        max-width: 72px;
+        width: 100%;
+    }
+
+    .checkout-section {
         width: 100%;
         max-width: 335px;
         justify-content: center;
         display: flex;
     }
 }
+
 @media(max-width: 1440px) {
-    .mb-section{
-       max-width: 600px;
-       width: 100%;
+    .mb-section {
+        max-width: 600px;
+        width: 100%;
     }
 
-   }
-   @media(max-width: 2560px){
-.mb-section{
-    max-width: 800px;
-    width: 100%;
 }
-   }
-   @media(max-width: 768px){
+
+@media(max-width: 2560px) {
+    .mb-section {
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
     .cart-section {
         display: flex;
         flex-direction: column;
 
-        }
-        .checkout-section{
-            display: contents;
-        }
-        .apply-section{
-            max-width: 140px;
-            width: 100%;
-        }
-        
-        
-   }
-   /* @media(max-width: 375px){
+    }
+
+    .checkout-section {
+        display: contents;
+    }
+
+    .apply-section {
+        max-width: 140px;
+        width: 100%;
+    }
+
+
+}
+
+/* @media(max-width: 375px){
 .right-section{
     display: flex;
     flex-direction: column;
@@ -176,4 +183,3 @@
 }
 
    } */
-   

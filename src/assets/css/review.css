@@ -3,7 +3,7 @@
     border: 1px solid #000000;
     border-radius: 20px;
     padding: 28px 32px;
-    
+
 }
 
 .review {
@@ -23,14 +23,13 @@
     padding: 80px 0 40px;
 }
 
-@media(max-width:1024px){
-     
-}
+@media(max-width:1024px) {}
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .m_primary_heading {
         font-size: 32px;
     }
+
     .review_heading {
         display: flex;
         justify-content: space-between;
@@ -51,7 +50,7 @@
         border-radius: 20px;
         padding: 20px 20px;
     }
-    
+
 }
 
 @media(max-width:375px) {
@@ -94,7 +93,7 @@
     .review_text_bar {
         display: flex;
         justify-content: space-between;
-        
+
     }
 }
 
@@ -108,7 +107,7 @@
     .review_text_bar {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     .review_heading {

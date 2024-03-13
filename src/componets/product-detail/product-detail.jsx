@@ -1,26 +1,27 @@
-import React, { Fragment,useEffect,useState,useParams} from "react";
+import React, { Fragment, useEffect, useState, } from "react";
 import '../../assets/css/product-detail.css'
-import { Link } from "react-router-dom";
+import { Link,useParams } from "react-router-dom";
 
 
-const ProductDetails=()=>{
+const ProductDetails = () => {
 
+    const {id}=useParams();
+    console.log(id);
+    const [productData, setProductData] = useState()
+
+
+    const fetchProductData = async () => {
+        let data = await fetch(`https://fakestoreapi.com/products/${id}`)
+        data = await data.json();
+        setProductData(data)
+
+    }
     
-     const [productData, setProductData] = useState([]) 
-  
-   
-     const fetchProductData = async () => {
-      const data =await fetch('https://fakestoreapi.com/products/1')
-         .then(res => {return res.json()})
-         .then(json => console.log(json))
-         setProductData(data)
-     }
-     console.log(productData);
 
-//    useEffect(() => {
-//        fetchProductData();
-      
-//      }, []);
+    useEffect(() => {
+        fetchProductData();
+
+    }, []);
 
     return (
         <Fragment>
@@ -62,7 +63,7 @@ const ProductDetails=()=>{
                                         <button className="color-btn1" ></button>
                                         <button className="color-btn2"></button>
                                         <button className="color-btn3"></button>
-                                    
+
                                     </div>
                                 </div>
                                 <hr />
@@ -77,23 +78,27 @@ const ProductDetails=()=>{
                                 </div>
                                 <div className="cart-section">
                                     <div className="contity">1 + 2</div>
-                                
+
                                     <Link to='/cart_section' className="cart_add">add to cart</Link>
                                 </div>
                             </div>
                         </div>
+                        <h3></h3>
+                        <h2>{productData?.title}</h2>
 
-                           {
-                            productData.map((item)=>{
-                                <>
-                                <h2>{item.title}</h2></>
-                                return(
-                                    <div>
-                                        {item.title}
-                                    </div>
+                        {
+                            productData?.length > 0 &&
+                            productData?.map((item) => {
+                                
+                                return (
+                                    <>
+                            
+                                    </>
                                 )
                             })
-                           }
+                        }
+
+                       
 
                     </div>
                 </div>
