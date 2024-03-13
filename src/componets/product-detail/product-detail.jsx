@@ -40,17 +40,12 @@ const ProductDetails = () => {
                             <div className="right-side-product">
                                 <h1>{productData?.title}</h1>
                                 <div className="rate_us">
-                                    <div className="star">
-                                        <img src={require('../../assets/img/star.png')} alt="Star" />
-                                        <img src={require('../../assets/img/star.png')} alt="Star" />
-                                        <img src={require('../../assets/img/star.png')} alt="Star" />
-                                        <img src={require('../../assets/img/star.png')} alt="Star" />
-                                        <img src={require('../../assets/img/hafstar.png')} alt="Star" />
-                                    </div>
-                                    <p>{productData?.rating.rate}</p>
+                                  
+                                    <p>Rating:-</p>
+                                    <p>{productData?.rating.rate}/5</p>
                                 </div>
                                 <div className="prices-products">
-                                    <h1>{productData?.price}</h1>
+                                    <h1>${productData?.price}</h1>
                                     <h1 className="offer_price">$300</h1>
                                     <div className="offer-percentage">-40%</div>
                                 </div>

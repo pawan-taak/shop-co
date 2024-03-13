@@ -6,28 +6,24 @@ import Card from "../../snippets/card";
 const Selling = () => {
   const data = [
     {
-      image: 'vertical_shirt.png',
+      img: 'vertical_shirt.png',
       title: 'VERTICAL STRIPED SHIRT',
-      stars: 5,
       price: '120',
     },
-   
+
     {
-      image: 'orange_shirt.png',
+      img: 'orange_shirt.png',
       title: 'COURAGE GRAPHIC T-SHIRT',
-      stars: 5,
       price: '240',
     },
     {
-      image: 'cut_pant.png',
+      img: 'cut_pant.png',
       title: 'LOOSE FIT BERMUDA SHORTS',
-      stars: 5,
       price: '180',
     },
     {
-      image: 'long_pant.png',
+      img: 'long_pant.png',
       title: 'FADED SKINNY JEANS',
-      stars: 5,
       price: '130',
     },
   ];
