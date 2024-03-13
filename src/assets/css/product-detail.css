@@ -195,4 +195,11 @@
     padding: 10px 0;
    }
 
-    
+   .T-shirt img{
+    width: 280px;
+   }
+    .T-shirt{
+
+      padding: 50px;
+      border: 1px solid black;
+    }

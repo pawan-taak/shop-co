@@ -35,10 +35,10 @@ const ProductDetails = () => {
                         </div>
                         <div className="product-section">
                             <div className="T-shirt">
-                                <img src={require('../../assets/img/tshirt.png')} alt="tshirt" />
+                                <img src={productData?.image} alt="tshirt" />
                             </div>
                             <div className="right-side-product">
-                                <h1>ONE LIFE GRAPHIC T-SHIRT</h1>
+                                <h1>{productData?.title}</h1>
                                 <div className="rate_us">
                                     <div className="star">
                                         <img src={require('../../assets/img/star.png')} alt="Star" />
@@ -47,15 +47,14 @@ const ProductDetails = () => {
                                         <img src={require('../../assets/img/star.png')} alt="Star" />
                                         <img src={require('../../assets/img/hafstar.png')} alt="Star" />
                                     </div>
-                                    <p>4.5/5</p>
+                                    <p>{productData?.rating.rate}</p>
                                 </div>
                                 <div className="prices-products">
-                                    <h1>$260</h1>
+                                    <h1>{productData?.price}</h1>
                                     <h1 className="offer_price">$300</h1>
                                     <div className="offer-percentage">-40%</div>
                                 </div>
-                                <p className="about_tshirt_text">This graphic t-shirt which is perfect for any occasion.
-                                    Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+                                <p className="about_tshirt_text">{productData?.description}</p>
                                 <hr />
                                 <div className="colors_choice">
                                     <h2> Select Colors</h2>
@@ -84,7 +83,7 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <h3></h3>
-                        <h2>{productData?.title}</h2>
+                        
 
                         {
                             productData?.length > 0 &&
